@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>TDMAX</title>
+  <link rel="stylesheet" href="css/estilos.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:wght@400;600;700&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="td-navbar">
+  <a class="td-logo" href="#">
+    <img src="images/logos/logo-tdmax-500x200.png" alt="Logo TDMAX">
+  </a>
+  <a href="#" class="td-login">Iniciar Sesión</a>
+</nav>
+
+<!-- Carousel -->
+<div class="td-carousel" id="tdCarousel">
+
+  <!-- Progress Bar -->
+  <div class="td-progress" id="progressBar"></div>
+
+  <!-- Slide 1 -->
+  <div class="carousel-item active slide-1">
+    <div class="slide-bg"></div>
+    <div class="slide-visual">
+      <img src="images/desktop/jugadores-mundial-800x900.png" alt="" width="100%">
+    </div>
+    <div class="slide-overlay"></div>
+    <div class="slide-content">
+      <!--<h1 class="slide-headline">Todo el fútbol nacional &amp; más</h1>-->
+      <p class="slide-sub">Disfrutá el mejor contenido: todo el fútbol nacional, entretenimiento y eventos en vivo.</p>
+      <div class="cta-group">
+        <button class="btn-subscribe">Suscríbete</button> <br>
+        <button class="btn-plans">Ver detalle de los planes</button> <br><br>
+        <img id="canales" src="images/logos/logos-900x120.png" alt="logos canales">
+      </div>
+    </div>
+    <!--<div class="channels-strip">
+      <span class="ch-label">Incluye</span>
+      <span class="ch-badge ch-tigo">Teletica</span>
+      <span class="ch-plus">+</span>
+      <span class="ch-badge ch-6">Canal 6</span>
+      <span class="ch-plus">+</span>
+      <span class="ch-badge ch-futv">FUTV</span>
+      <span class="ch-plus">+</span>
+      <span class="ch-badge ch-td">TD+</span>
+      <span class="ch-plus">+</span>
+      <span class="ch-badge ch-sports">Tigo Sports</span>
+      <span class="ch-plus">+</span>
+      <span class="ch-badge ch-8">Canal 8</span>
+    </div>-->
+  </div>
+
+  <!-- Slide 2 -->
+  <div class="carousel-item slide-2">
+    <div class="slide-bg"></div>
+    <div class="slide-visual">
+      <img src="images/desktop/entretenimiento-800x900.png" alt="" width="100%">
+    </div>
+    <div class="slide-overlay"></div>
+    <div class="slide-content">
+      <h1 class="slide-headline">SERIES, SHOWS Y MUCHO MÁS</h1>
+      <div class="cta-group">
+        <button class="btn-subscribe">Suscríbete</button> <br>
+        <button class="btn-plans">Ver detalle de los planes</button> <br><br>
+        <img id="canales" src="images/logos/logos-900x120.png" alt="logos canales">
+      </div>
+    </div>
+  </div>
+
+  <!-- Slide 3 -->
+  <div class="carousel-item slide-3">
+    <div class="slide-bg"></div>
+    <div class="slide-visual">
+      <img src="images/player3.png" alt="" width="100%">
+    </div>
+    <div class="slide-overlay"></div>
+    <div class="slide-content">
+      <h1 class="slide-headline">TODO EL FÚTBOL NACIONAL &amp; MÁS</h1>
+      <div class="cta-group">
+        <button class="btn-subscribe">Suscríbete</button> <br>
+        <button class="btn-plans">Ver detalle de los planes</button> <br><br>
+        <img id="canales" src="images/logos/logos-900x120.png" alt="logos canales">
+      </div>
+    </div>
+  </div>
+
+  <!-- Indicators -->
+  <div class="td-indicators" id="tdDots">
+    <button class="td-dot active" data-index="0"></button>
+    <button class="td-dot" data-index="1"></button>
+    <button class="td-dot" data-index="2"></button>
+  </div>
+</div>
+<!-- SECCION 2 -->
+<section class="futbol-section">
+  <div class="futbol-inner">
+    <!-- Text left -->
+    <div class="futbol-text">
+      <h2 class="futbol-title">LO MEJOR DEL FÚTBOL</h2>
+      <p class="futbol-desc">Copa Mundial 2026, todo el fútbol nacional, primera división, fútbol femenino, ascenso, liga menor.</p>
+      <button class="btn-subscribe">Suscríbete</button> <br>
+      <button class="btn-plans">Ver detalle de los planes</button> <br><br>
+    </div>
+    <!-- Visual right -->
+    <div class="futbol-visual">
+      <img src="images/banner3.png" alt="Jugadores" class="players-img" />
+      <!-- Leagues strip -->
+      <div class="futbol-leagues">
+        <img src="images/logos/logos-900x120.png" alt="logos canales">
+    </div>
+  </div>
+</section>
+<!-- SECCION 3 -->
+<section class="canales-section">
+  <div class="canales-inner">
+
+    <!-- Texto izquierda -->
+    <div class="canales-text">
+      <h2 class="futbol-title">CANALES <br>EN VIVO</h2>
+      <p class="futbol-desc">Tu programación preferida, en cualquier <br>momento, en cualquier lugar.</p>
+      <button class="btn-subscribe">Suscríbete</button> <br>
+      <button class="btn-plans">Ver detalle de los planes</button> <br><br>
+    </div>
+
+    <!-- Grid de canales -->
+    <div class="canales-grid">
+
+      <!-- Nacionales -->
+      <div class="canal-row">
+        <span class="row-label">Nacionales</span>
+        <div class="row-divider"></div>
+        <div class="logos-list">
+          <img src="images/logos/canales.png" alt="" width="100%">
+        </div>
+      </div>
+
+      <!-- Deportivos -->
+      <div class="canal-row">
+        <span class="row-label">Deportivos</span>
+        <div class="row-divider"></div>
+        <div class="logos-list">
+          <img src="images/logos/canales.png" alt="" width="100%">
+        </div>
+      </div>
+
+      <!-- Radios -->
+      <div class="canal-row">
+        <span class="row-label">Radios</span>
+        <div class="row-divider"></div>
+        <div class="logos-list">
+          <img src="images/logos/canales.png" alt="" width="100%">
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- SECCION 4 -->
+<section class="contenido-section">
+  <div class="contenido-inner">
+    <!-- Text left -->
+    <div class="contenido-text">
+      <h2 class="contenido-title">CONTENIDO EXCLUSIVO</h2>
+      <p class="contenido-desc">Disfrutá el mejor entretenimiento: programas semanales y contenido disponible solo en el app TDMAX.</p>
+      <button class="btn-subscribe">Suscríbete</button> <br>
+      <button class="btn-plans">Ver detalle de los planes</button> <br><br>
+    </div>
+    <!-- Visual right -->
+    <div class="contenido-visual">
+      <img src="images/desktop/entretenimiento-800x900.png" alt="Jugadores" class="players-img" />
+  </div>
+</section>
+
+<!-- SECCION 5 -->
+<section class="planes-section">
+  <div class="planes-header">
+    <h2 class="planes-title">ELEGÍ TU PLAN</h2>
+    <p class="planes-sub">Podés cambiar de plan o cancelar en cualquier momento.</p>
+  </div>
+  <div class="planes-wrapper">
+    <!-- DESKTOP GRID -->
+    <div class="planes-grid">
+      <!-- Mensual -->
+      <div class="plan-card">
+        <div class="plan-header">
+          <div class="plan-name">MENSUAL</div>
+        </div>
+        <div class="plan-body">
+          <div class="plan-feature">Todo el contenido</div>
+          <div class="plan-feature">4 dispositivos</div>
+          <div class="plan-price-block">
+            <div class="plan-price"><sup>$</sup>10.90</div>
+          </div>
+          <a href="#" class="btn-select">Seleccionar</a>
+        </div>
+      </div>
+      <!-- Semestral -->
+      <div class="plan-card">
+        <div class="plan-header">
+          <div class="plan-name">SEMESTRAL</div>
+        </div>
+        <div class="plan-body">
+          <div class="plan-feature">Todo el contenido</div>
+          <div class="plan-feature">4 dispositivos</div>
+          <div class="plan-price-block">
+            <div class="plan-price"><sup>$</sup>49.90</div>
+            <div class="plan-savings">(Ahorro: 24%)</div>
+          </div>
+          <a href="#" class="btn-select">Seleccionar</a>
+        </div>
+      </div>
+      <!-- Anual (featured) -->
+      <div class="plan-card featured">
+        <div class="plan-header">
+          <div class="plan-name">ANUAL</div>
+          <div class="plan-badge"><span>★</span></div>
+        </div>
+        <div class="plan-body">
+          <div class="plan-feature">Todo el contenido</div>
+          <div class="plan-feature">4 dispositivos</div>
+          <div class="plan-price-block">
+            <div class="plan-price"><sup>$</sup>89.90</div>
+            <div class="plan-savings">(Ahorro: 31%)</div>
+          </div>
+          <a href="#" class="btn-select">Seleccionar</a>
+        </div>
+      </div>
+      <!-- Plan Samsung -->
+      <div class="plan-card">
+        <div class="plan-header">
+          <div class="plan-name">PLAN SAMSUNG</div>
+        </div>
+        <div class="plan-body">
+          <div class="plan-feature">Todo el contenido</div>
+          <div class="plan-feature">4 dispositivos</div>
+          <div class="plan-price-block">
+          </div>
+          <a href="#" class="btn-select">Seleccionar</a>
+        </div>
+      </div>
+    </div>
+    <!-- MOBILE CAROUSEL -->
+    <div class="planes-carousel-wrap">
+      <div class="planes-track-outer">
+        <div class="planes-track" id="planesTrack">
+
+          <div class="plan-card">
+            <div class="plan-header"><div class="plan-name">Mensual</div></div>
+            <div class="plan-body">
+              <div class="plan-feature">Todo el contenido</div>
+              <div class="plan-feature">4 dispositivos</div>
+              <div class="plan-price-block">
+                <div class="plan-price"><sup>$</sup>10.90</div>
+              </div>
+              <a href="#" class="btn-select">Seleccionar</a>
+            </div>
+          </div>
+
+          <div class="plan-card">
+            <div class="plan-header"><div class="plan-name">Semestral</div></div>
+            <div class="plan-body">
+              <div class="plan-feature">Todo el contenido</div>
+              <div class="plan-feature">4 dispositivos</div>
+              <div class="plan-price-block">
+                <div class="plan-price"><sup>$</sup>49.90</div>
+                <div class="plan-savings">(Ahorro: 24%)</div>
+              </div>
+              <a href="#" class="btn-select">Seleccionar</a>
+            </div>
+          </div>
+
+          <div class="plan-card featured">
+            <div class="plan-header">
+              <div class="plan-name">Anual</div>
+              <div class="plan-badge"><span>★</span></div>
+            </div>
+            <div class="plan-body">
+              <div class="plan-feature">Todo el contenido</div>
+              <div class="plan-feature">4 dispositivos</div>
+              <div class="plan-price-block">
+                <div class="plan-price"><sup>$</sup>89.90</div>
+                <div class="plan-savings">(Ahorro: 31%)</div>
+              </div>
+              <a href="#" class="btn-select">Seleccionar</a>
+            </div>
+          </div>
+
+          <div class="plan-card">
+            <div class="plan-header"><div class="plan-name">Plan Samsung</div></div>
+            <div class="plan-body">
+              <div class="plan-feature">Todo el contenido</div>
+              <div class="plan-feature">4 dispositivos</div>
+              <div class="plan-price-block">
+                <div class="plan-price" style="font-size:1.4rem; color:#6a7a9a; font-family:'Barlow',sans-serif; font-weight:600; letter-spacing:0;">Precio especial<br>Samsung</div>
+              </div>
+              <a href="#" class="btn-select">Seleccionar</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Dots -->
+      <div class="planes-dots" id="planesDots">
+        <button class="planes-dot active" data-idx="0"></button>
+        <button class="planes-dot" data-idx="1"></button>
+        <button class="planes-dot" data-idx="2"></button>
+        <button class="planes-dot" data-idx="3"></button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SECCION FAQ -->
+<section class="faq-section">
+  <div class="faq-inner">
+
+    <h2 class="faq-title">PREGUNTAS FRECUENTES</h2>
+
+    <div class="faq-list">
+
+      <div class="faq-item">
+        <button class="faq-question">
+          <span class="faq-q-text">¿Qué puedo ver en TDMAX?</span>
+          <span class="faq-chevron"><svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg></span>
+        </button>
+        <div class="faq-answer">
+          <p class="faq-a-text">En TDMAX podés disfrutar de todo el fútbol nacional e internacional, canales en vivo como Teletica, Canal 6, Canal 8, Canal 11, FUTV, Tigo Sports y más. También encontrás contenido exclusivo, programas de entretenimiento, radios en vivo y eventos especiales.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">
+          <span class="faq-q-text">¿Necesito una suscripción?</span>
+          <span class="faq-chevron"><svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg></span>
+        </button>
+        <div class="faq-answer">
+          <p class="faq-a-text">Sí, para acceder a todo el contenido de TDMAX necesitás una suscripción activa. Podés elegir entre los planes Mensual, Semestral, Anual o Plan Samsung, según lo que mejor se adapte a tus necesidades. Podés cancelar en cualquier momento.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">
+          <span class="faq-q-text">¿Cuántos dispositivos puedo usar al mismo tiempo?</span>
+          <span class="faq-chevron"><svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg></span>
+        </button>
+        <div class="faq-answer">
+          <p class="faq-a-text">Todos los planes de TDMAX permiten el uso simultáneo en hasta 4 dispositivos. Podés ver contenido en tu teléfono, tablet, computadora o smart TV al mismo tiempo con una sola cuenta.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">
+          <span class="faq-q-text">¿Puedo ver TDMAX fuera de Costa Rica?</span>
+          <span class="faq-chevron"><svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg></span>
+        </button>
+        <div class="faq-answer">
+          <p class="faq-a-text">TDMAX está disponible principalmente para usuarios en Costa Rica. El acceso desde el exterior puede estar limitado dependiendo del contenido y los derechos de transmisión. Te recomendamos verificar la disponibilidad desde tu ubicación.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">
+          <span class="faq-q-text">¿En qué dispositivos puedo ver TDMAX?</span>
+          <span class="faq-chevron"><svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg></span>
+        </button>
+        <div class="faq-answer">
+          <p class="faq-a-text">TDMAX está disponible en smartphones y tablets Android e iOS, navegadores web (Chrome, Firefox, Safari), Smart TVs con Android TV, y dispositivos Samsung. Próximamente en más plataformas.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">
+          <span class="faq-q-text">¿Puedo cambiar o cancelar mi plan?</span>
+          <span class="faq-chevron"><svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg></span>
+        </button>
+        <div class="faq-answer">
+          <p class="faq-a-text">Sí, podés cambiar de plan o cancelar tu suscripción en cualquier momento desde tu perfil en la app o el sitio web. Los cambios aplican al siguiente ciclo de facturación.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">
+          <span class="faq-q-text">¿Dónde puedo pedir ayuda?</span>
+          <span class="faq-chevron"><svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg></span>
+        </button>
+        <div class="faq-answer">
+          <p class="faq-a-text">Podés contactar a nuestro equipo de soporte a través del chat en vivo dentro de la app, por correo electrónico o visitando el centro de ayuda en nuestro sitio web. Estamos disponibles para ayudarte todos los días.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<footer class="td-footer">
+  <!-- Redes sociales -->
+  <div class="footer-social">
+    <!-- X / Twitter -->
+    <a href="#" aria-label="X (Twitter)">
+      <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.744l7.737-8.835L1.254 2.25H8.08l4.253 5.622 5.912-5.622Zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+      </svg>
+    </a>
+    <!-- Instagram -->
+    <a href="#" aria-label="Instagram">
+      <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/>
+      </svg>
+    </a>
+    <!-- Facebook -->
+    <a href="#" aria-label="Facebook">
+      <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+      </svg>
+    </a>
+    <!-- TikTok -->
+    <a href="#" aria-label="TikTok">
+      <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/>
+      </svg>
+    </a>
+  </div>
+  <!-- Logo -->
+  <a href="#" class="footer-logo">
+    <img src="images/logos/logo-tdmax-500x200.png" alt="" width="200">
+  </a>
+  <!-- Legal links -->
+  <div class="footer-links">
+    <a href="#">Política de Privacidad</a>
+    <span class="sep">|</span>
+    <a href="#">Términos y Condiciones</a>
+    <span class="sep">|</span>
+    <a href="#">Contacto</a>
+  </div>
+  <!-- Copyright -->
+  <p class="footer-copy">© 2026 TDMAX. Todos los derechos reservados.</p>
+</footer>
+
+<script>
+  const slides = document.querySelectorAll('.carousel-item');
+  const dots   = document.querySelectorAll('.td-dot');
+  const bar    = document.getElementById('progressBar');
+  let current  = 0;
+  let interval;
+  const DURATION = 5000; // ms per slide
+
+  function goTo(idx) {
+    slides[current].classList.remove('active');
+    dots[current].classList.remove('active');
+    current = (idx + slides.length) % slides.length;
+    slides[current].classList.add('active');
+    dots[current].classList.add('active');
+    resetProgress();
+  }
+
+  function next() { goTo(current + 1); }
+
+  function resetProgress() {
+    bar.style.transition = 'none';
+    bar.style.width = '0%';
+    // Force reflow
+    bar.offsetHeight;
+    bar.style.transition = `width ${DURATION}ms linear`;
+    bar.style.width = '100%';
+  }
+
+  function startAuto() {
+    clearInterval(interval);
+    interval = setInterval(next, DURATION);
+    resetProgress();
+  }
+
+  dots.forEach(dot => {
+    dot.addEventListener('click', () => {
+      goTo(parseInt(dot.dataset.index));
+      clearInterval(interval);
+      interval = setInterval(next, DURATION);
+    });
+  });
+
+  startAuto();
+
+  (function() {
+  const track  = document.getElementById('planesTrack');
+  const dots   = document.querySelectorAll('#planesDots .planes-dot');
+  if (!track) return;
+
+  let current = 0;
+  let startX = 0;
+  let isDragging = false;
+
+  function getCardWidth() {
+    const card = track.querySelector('.plan-card');
+    return card ? card.offsetWidth + 16 : 0; // 16 = margin
+  }
+
+  function goTo(idx) {
+    const total = dots.length;
+    current = Math.max(0, Math.min(idx, total - 1));
+    track.style.transform = `translateX(-${current * getCardWidth()}px)`;
+    dots.forEach((d, i) => d.classList.toggle('active', i === current));
+  }
+
+  dots.forEach(dot => {
+    dot.addEventListener('click', () => goTo(parseInt(dot.dataset.idx)));
+  });
+
+  // Touch/swipe support
+  track.addEventListener('touchstart', e => {
+    startX = e.touches[0].clientX;
+    isDragging = true;
+  }, { passive: true });
+
+  track.addEventListener('touchend', e => {
+    if (!isDragging) return;
+    const diff = startX - e.changedTouches[0].clientX;
+    if (Math.abs(diff) > 40) {
+      goTo(diff > 0 ? current + 1 : current - 1);
+    }
+    isDragging = false;
+  });
+
+  // Recalculate on resize
+  window.addEventListener('resize', () => goTo(current));
+})();
+
+//FAQ DESPLEGABLE
+(function() {
+  document.querySelectorAll('.faq-question').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const item = btn.closest('.faq-item');
+      const isOpen = item.classList.contains('open');
+      // Close all
+      document.querySelectorAll('.faq-item.open').forEach(el => el.classList.remove('open'));
+      // Toggle clicked
+      if (!isOpen) item.classList.add('open');
+    });
+  });
+})();
+</script>
+
+</body>
+</html>
