@@ -590,6 +590,7 @@ body {
 }
 
 .row-label {
+  font-family: 'sanfra', sans-serif;
   font-size: 15px;
   font-weight: 700;
   letter-spacing: 2px;
@@ -1165,6 +1166,10 @@ background: linear-gradient(149deg, rgba(21, 29, 39, 1) 0%, rgba(0, 1, 3, 1) 100
 
 @media (max-width: 768px) {
   .td-navbar { padding: 16px 20px; }
+  .buttons{
+    display: flex;
+    gap: 5px;
+  }
   .slide-content {
     padding: 238px 20px;
     padding-top: 0px;
@@ -1181,7 +1186,7 @@ background: linear-gradient(149deg, rgba(21, 29, 39, 1) 0%, rgba(0, 1, 3, 1) 100
   }
   .td-login{
     font-size: 11px;
-    padding: 10px 15px;
+    padding: 10px 5px;
   }
   .slide-1 .slide-bg {
     background: url(../images/mobile/background-mundial-768x1024.jpg);

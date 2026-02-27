@@ -15,7 +15,10 @@
   <a class="td-logo" href="#">
     <img src="images/logos/logo-tdmax-500x200.png" alt="Logo TDMAX">
   </a>
-  <a href="#" class="td-login">Iniciar Sesión</a>
+  <div class="buttons">
+   <a href="https://app.tdmax.com/login" class="td-login">Iniciar Sesión</a>
+   <a href="https://app.tdmax.com/subscribe" class="td-login">Registrarse</a>
+ </div>
 </nav>
 
 <!-- Carousel -->
@@ -35,8 +38,8 @@
       <!--<h1 class="slide-headline">Todo el fútbol nacional &amp; más</h1>-->
       <p class="slide-sub">Disfrutá el mejor contenido: todo el fútbol nacional, entretenimiento y eventos en vivo.</p>
       <div class="cta-group">
-        <button class="btn-subscribe">Suscríbete</button> <br>
-        <button class="btn-plans">Ver detalle de los planes</button> <br><br>
+        <a href="https://app.tdmax.com/subscribe"><button class="btn-subscribe">Suscríbete</button></a> <br>
+        <a href="#planes"><button class="btn-plans">Ver detalle de los planes</button></a> <br><br>
         <img id="canales" src="images/logos/logos-900x120.png" alt="logos canales">
       </div>
     </div>
@@ -65,14 +68,14 @@
     <div class="slide-content">
       <h1 class="slide-headline">SERIES, SHOWS Y MUCHO MÁS</h1>
       <div class="cta-group">
-        <button class="btn-subscribe">Suscríbete</button> <br>
-        <button class="btn-plans">Ver detalle de los planes</button> <br><br>
+        <a href="https://app.tdmax.com/subscribe"><button class="btn-subscribe">Suscríbete</button></a> <br>
+        <a href="#planes"><button class="btn-plans">Ver detalle de los planes</button></a> <br><br>
         <img id="canales" src="images/logos/logos-900x120.png" alt="logos canales">
       </div>
     </div>
   </div>
 
-  <!-- Slide 3 -->
+  <!-- Slide 3 
   <div class="carousel-item slide-3">
     <div class="slide-bg"></div>
     <div class="slide-visual">
@@ -82,17 +85,17 @@
       <h1 class="slide-headline">TODO EL FÚTBOL NACIONAL &amp; MÁS</h1>
       <div class="cta-group">
         <button class="btn-subscribe">Suscríbete</button> <br>
-        <button class="btn-plans">Ver detalle de los planes</button> <br><br>
+        <a href="#planes"><button class="btn-plans">Ver detalle de los planes</button></a> <br><br>
         <img id="canales" src="images/logos/logos-900x120.png" alt="logos canales">
       </div>
     </div>
-  </div>
+  </div>-->
 
   <!-- Indicators -->
   <div class="td-indicators" id="tdDots">
     <button class="td-dot active" data-index="0"></button>
     <button class="td-dot" data-index="1"></button>
-    <button class="td-dot" data-index="2"></button>
+    <!--<button class="td-dot" data-index="2"></button>-->
   </div>
 </div>
 <!-- SECCION 2 -->
@@ -102,8 +105,8 @@
     <div class="futbol-text">
       <h2 class="futbol-title">LO MEJOR DEL FÚTBOL</h2>
       <p class="futbol-desc">Copa Mundial 2026, todo el fútbol nacional, primera división, fútbol femenino, ascenso, liga menor.</p>
-      <button class="btn-subscribe">Suscríbete</button> <br>
-      <button class="btn-plans">Ver detalle de los planes</button> <br><br>
+      <a href="https://app.tdmax.com/subscribe"><button class="btn-subscribe">Suscríbete</button></a> <br>
+      <a href="#planes"><button class="btn-plans">Ver detalle de los planes</button></a> <br><br>
     </div>
     <!-- Visual right -->
     <div class="futbol-visual">
@@ -122,8 +125,8 @@
     <div class="canales-text">
       <h2 class="futbol-title">CANALES <br>EN VIVO</h2>
       <p class="futbol-desc">Tu programación preferida, en cualquier <br>momento, en cualquier lugar.</p>
-      <button class="btn-subscribe">Suscríbete</button> <br>
-      <button class="btn-plans">Ver detalle de los planes</button> <br><br>
+      <a href="https://app.tdmax.com/subscribe"><button class="btn-subscribe">Suscríbete</button></a> <br>
+      <a href="#planes"><button class="btn-plans">Ver detalle de los planes</button></a> <br><br>
     </div>
 
     <!-- Grid de canales -->
@@ -134,7 +137,7 @@
         <span class="row-label">Nacionales</span>
         <div class="row-divider"></div>
         <div class="logos-list">
-          <img src="images/desktop/nacionales.png" alt="" width="100%">
+          <img src="images/desktop/nacionales-row-desktop2.png" alt="" width="100%">
         </div>
       </div>
 
@@ -143,7 +146,7 @@
         <span class="row-label">Deportivos</span>
         <div class="row-divider"></div>
         <div class="logos-list">
-          <img src="images/desktop/nacionales.png" alt="" width="100%">
+          <img src="images/desktop/deportivos-row-desktop2.png" alt="" width="100%">
         </div>
       </div>
 
@@ -167,8 +170,8 @@
     <div class="contenido-text">
       <h2 class="contenido-title">CONTENIDO EXCLUSIVO</h2>
       <p class="contenido-desc">Disfrutá el mejor entretenimiento: programas semanales y contenido disponible solo en el app TDMAX.</p>
-      <button class="btn-subscribe">Suscríbete</button> <br>
-      <button class="btn-plans">Ver detalle de los planes</button> <br><br>
+      <a href="https://app.tdmax.com/subscribe"><button class="btn-subscribe">Suscríbete</button></a> <br>
+      <a href="#planes"><button class="btn-plans">Ver detalle de los planes</button></a> <br><br>
     </div>
     <!-- Visual right -->
     <div class="contenido-visual">
@@ -177,7 +180,7 @@
 </section>
 
 <!-- SECCION 5 -->
-<section class="planes-section">
+<section class="planes-section" id="planes">
   <div class="planes-header">
     <h2 class="planes-title">ELEGÍ TU PLAN</h2>
     <p class="planes-sub">Podés cambiar de plan o cancelar en cualquier momento.</p>
@@ -196,7 +199,7 @@
           <div class="plan-price-block">
             <div class="plan-price"><sup>$</sup>10.90</div>
           </div>
-          <a href="#" class="btn-select">Seleccionar</a>
+          <a href="https://app.tdmax.com/subscribe" class="btn-select">Seleccionar</a>
         </div>
       </div>
       <!-- Semestral -->
@@ -211,7 +214,7 @@
             <div class="plan-price"><sup>$</sup>49.90</div>
             <div class="plan-savings">(Ahorro: 24%)</div>
           </div>
-          <a href="#" class="btn-select">Seleccionar</a>
+          <a href="https://app.tdmax.com/subscribe" class="btn-select">Seleccionar</a>
         </div>
       </div>
       <!-- Anual (featured) -->
@@ -227,7 +230,7 @@
             <div class="plan-price"><sup>$</sup>89.90</div>
             <div class="plan-savings">(Ahorro: 31%)</div>
           </div>
-          <a href="#" class="btn-select">Seleccionar</a>
+          <a href="https://app.tdmax.com/subscribe" class="btn-select">Seleccionar</a>
         </div>
       </div>
       <!-- Plan Samsung -->
@@ -432,11 +435,11 @@
   </a>
   <!-- Legal links -->
   <div class="footer-links">
-    <a href="#">Política de Privacidad</a>
+    <a href="https://app.tdmax.com/privacy">Política de Privacidad</a>
     <span class="sep">|</span>
-    <a href="#">Términos y Condiciones</a>
+    <a href="https://app.tdmax.com/terms">Términos y Condiciones</a>
     <span class="sep">|</span>
-    <a href="#">Contacto</a>
+    <a href="https://app.tdmax.com/contact-us">Contacto</a>
   </div>
   <!-- Copyright -->
   <p class="footer-copy">© 2026 TDMAX. Todos los derechos reservados.</p>
