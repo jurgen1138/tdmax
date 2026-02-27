@@ -131,7 +131,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 0 50px;
+  padding: 0px 0px 80px 50px;
   max-width: 100%;
 }
 
@@ -1163,6 +1163,28 @@ background: linear-gradient(149deg, rgba(21, 29, 39, 1) 0%, rgba(0, 1, 3, 1) 100
 }
 /* ── END FOOTER SECCION── */
 
+/* ── MEDIA QUERIES── */
+
+@media (min-width: 1024px) and (max-width: 1280px) {
+  .slide-content {
+    max-width: 50%;
+  }
+  .slide-sub {
+    font-size: 28px;
+  }
+  .futbol-title {
+    font-size: 80px;
+  }
+  .futbol-desc {
+    font-size: 23px;
+  }
+  .contenido-title {
+    font-size: 80px;
+  }
+  .contenido-desc {
+    font-size: 23px;
+  }
+}
 
 @media (max-width: 768px) {
   .td-navbar { padding: 16px 20px; }
@@ -1171,7 +1193,7 @@ background: linear-gradient(149deg, rgba(21, 29, 39, 1) 0%, rgba(0, 1, 3, 1) 100
     gap: 5px;
   }
   .slide-content {
-    padding: 238px 20px;
+    padding: 280px 20px;
     padding-top: 0px;
     max-width: 100%;
   }
