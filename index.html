@@ -3,16 +3,26 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>TDMAX</title>
+  <title>TDMAX | Live sports and events</title>
+  <link rel="icon" href="images/logos/logotdmax.png">
   <link rel="stylesheet" href="css/estilos.css">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet"/>
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:wght@400;600;700&display=swap" rel="stylesheet"/>
+  <script src="js/wow.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
-
+  <script>
+    new WOW().init();
+  </script>
+  <script>
+    AOS.init();
+  </script>
 <!-- Navbar -->
 <nav class="td-navbar">
-  <a class="td-logo" href="#">
+  <a class="td-logo wow animate__animated animate__bounceInDown" href="#">
     <img src="images/logos/logo-tdmax-500x200.png" alt="Logo TDMAX">
   </a>
   <div class="buttons">
@@ -30,11 +40,11 @@
   <!-- Slide 1 -->
   <div class="carousel-item active slide-1">
     <div class="slide-bg"></div>
-    <div class="slide-visual">
+    <div class="slide-visual wow animate__animated animate__bounceInRight" data-wow-delay="0.5s">
       <img src="images/desktop/jugadores-mundial-800x900.png" alt="" width="100%">
     </div>
     <div class="slide-overlay"></div>
-    <div class="slide-content">
+    <div class="slide-content wow animate__animated animate__bounceInLeft" data-wow-delay="0.5s">
       <!--<h1 class="slide-headline">Todo el fútbol nacional &amp; más</h1>-->
       <p class="slide-sub">Disfrutá el mejor contenido: todo el fútbol nacional, entretenimiento y eventos en vivo.</p>
       <div class="cta-group">
@@ -62,10 +72,10 @@
   <!-- Slide 2 -->
   <div class="carousel-item slide-2">
     <div class="slide-bg"></div>
-    <div class="slide-visual">
+    <div class="slide-visual wow animate__animated animate__bounceInRight">
       <img src="images/desktop/entretenimiento-desktop.png" alt="" width="100%">
     </div>
-    <div class="slide-content">
+    <div class="slide-content wow animate__animated animate__bounceInLeft">
       <h1 class="slide-headline">SERIES, SHOWS Y MUCHO MÁS</h1>
       <div class="cta-group">
         <a href="https://app.tdmax.com/subscribe"><button class="btn-subscribe">Suscríbete</button></a> <br>
@@ -103,13 +113,13 @@
   <div class="futbol-inner">
     <!-- Text left -->
     <div class="futbol-text">
-      <h2 class="futbol-title">LO MEJOR DEL FÚTBOL</h2>
-      <p class="futbol-desc">Copa Mundial 2026, todo el fútbol nacional, primera división, fútbol femenino, ascenso, liga menor.</p>
-      <a href="https://app.tdmax.com/subscribe"><button class="btn-subscribe">Suscríbete</button></a> <br>
-      <a href="#planes"><button class="btn-plans">Ver detalle de los planes</button></a> <br><br>
+      <h2 class="futbol-title wow animate__animated animate__bounceInDown" data-wow-delay="0.3s">LO MEJOR DEL FÚTBOL</h2>
+      <p class="futbol-desc wow animate__animated animate__bounceInLeft" data-wow-delay="0.6s">Copa Mundial 2026, todo el fútbol nacional, primera división, fútbol femenino, ascenso y liga menor.</p>
+      <a href="https://app.tdmax.com/subscribe"><button class="btn-subscribe wow animate__animated animate__bounceInUp" data-wow-delay="0.9s">Suscríbete</button></a> <br>
+      <a href="#planes"><button class="btn-plans wow animate__animated animate__fadeIn" data-wow-delay="1.5s">Ver detalle de los planes</button></a> <br><br>
     </div>
     <!-- Visual right -->
-    <div class="futbol-visual">
+    <div class="futbol-visual wow animate__animated animate__pulse" data-wow-delay="1.5s">
       <img src="images/desktop/jugadores-futbol-nacional.png" alt="Jugadores" class="players-img" />
       <!-- Leagues strip 
       <div class="futbol-leagues">
@@ -123,29 +133,29 @@
 
     <!-- Texto izquierda -->
     <div class="canales-text">
-      <h2 class="futbol-title">CANALES <br>EN VIVO</h2>
-      <p class="futbol-desc">Tu programación preferida, en cualquier <br>momento, en cualquier lugar.</p>
-      <a href="https://app.tdmax.com/subscribe"><button class="btn-subscribe">Suscríbete</button></a> <br>
-      <a href="#planes"><button class="btn-plans">Ver detalle de los planes</button></a> <br><br>
+      <h2 class="futbol-title wow animate__animated animate__bounceInDown" data-wow-delay="0.3s">CANALES <br>EN VIVO</h2>
+      <p class="futbol-desc wow animate__animated animate__bounceInLeft" data-wow-delay="0.6s">Tu programación preferida, en cualquier <br>momento, en cualquier lugar.</p>
+      <a href="https://app.tdmax.com/subscribe"><button class="btn-subscribe wow animate__animated animate__bounceInUp" data-wow-delay="0.9s">Suscríbete</button></a> <br>
+      <a href="#planes"><button class="btn-plans wow animate__animated animate__fadeIn" data-wow-delay="1.5s">Ver detalle de los planes</button></a> <br><br>
     </div>
 
     <!-- Grid de canales -->
-    <div class="canales-grid">
+    <div class="canales-grid wow animate__animated animate__bounceInRight" data-wow-delay="1.2s">
 
       <!-- Nacionales -->
       <div class="canal-row">
-        <span class="row-label">Nacionales</span>
+        <span class="row-label wow animate__animated animate__bounceInDown" data-wow-delay="2.3s">Nacionales</span>
         <div class="row-divider"></div>
-        <div class="logos-list">
+        <div class="logos-list wow animate__animated animate__flipInX" data-wow-delay="3.5s">
           <img src="images/desktop/nacionales-row-desktop2.png" alt="" width="100%">
         </div>
       </div>
 
       <!-- Deportivos -->
       <div class="canal-row">
-        <span class="row-label">Deportivos</span>
+        <span class="row-label wow animate__animated animate__bounceInDown" data-wow-delay="1.8s">Deportivos</span>
         <div class="row-divider"></div>
-        <div class="logos-list">
+        <div class="logos-list wow animate__animated animate__flipInX" data-wow-delay="3s">
           <img src="images/desktop/deportivos-row-desktop2.png" alt="" width="100%">
         </div>
       </div>
@@ -168,13 +178,13 @@
   <div class="contenido-inner">
     <!-- Text left -->
     <div class="contenido-text">
-      <h2 class="contenido-title">CONTENIDO EXCLUSIVO</h2>
-      <p class="contenido-desc">Disfrutá el mejor entretenimiento: programas semanales y contenido disponible solo en el app TDMAX.</p>
-      <a href="https://app.tdmax.com/subscribe"><button class="btn-subscribe">Suscríbete</button></a> <br>
-      <a href="#planes"><button class="btn-plans">Ver detalle de los planes</button></a> <br><br>
+      <h2 class="contenido-title wow animate__animated animate__bounceInDown" data-wow-delay="0.3s">CONTENIDO EXCLUSIVO</h2>
+      <p class="contenido-desc wow animate__animated animate__bounceInLeft" data-wow-delay="0.6s">Disfrutá el mejor entretenimiento: programas semanales y contenido disponible solo en el app TDMAX.</p>
+      <a href="https://app.tdmax.com/subscribe"><button class="btn-subscribe wow animate__animated animate__bounceInUp" data-wow-delay="0.9s">Suscríbete</button></a> <br>
+      <a href="#planes"><button class="btn-plans wow animate__animated animate__fadeIn" data-wow-delay="1.5s">Ver detalle de los planes</button></a> <br><br>
     </div>
     <!-- Visual right -->
-    <div class="contenido-visual">
+    <div class="contenido-visual wow animate__animated animate__bounceInRight" data-wow-delay="0.5s">
       <img src="images/desktop/imagen-contenido-exclusivo-desktop.png" alt="Jugadores" class="players-img" />
   </div>
 </section>
@@ -182,14 +192,14 @@
 <!-- SECCION 5 -->
 <section class="planes-section" id="planes">
   <div class="planes-header">
-    <h2 class="planes-title">ELEGÍ TU PLAN</h2>
-    <p class="planes-sub">Podés cambiar de plan o cancelar en cualquier momento.</p>
+    <h2 class="planes-title wow animate__animated animate__bounceInDown">ELEGÍ TU PLAN</h2>
+    <p class="planes-sub wow animate__animated animate__bounceInDown" data-wow-delay="0.5s">Podés cambiar de plan o cancelar en cualquier momento.</p>
   </div>
   <div class="planes-wrapper">
     <!-- DESKTOP GRID -->
     <div class="planes-grid">
       <!-- Mensual -->
-      <div class="plan-card">
+      <div class="plan-card wow animate__animated animate__tada" data-wow-delay="1.5s">
         <div class="plan-header">
           <div class="plan-name">MENSUAL</div>
         </div>
@@ -203,7 +213,7 @@
         </div>
       </div>
       <!-- Semestral -->
-      <div class="plan-card">
+      <div class="plan-card wow animate__animated animate__tada" data-wow-delay="2.5s">
         <div class="plan-header">
           <div class="plan-name">SEMESTRAL</div>
         </div>
@@ -218,7 +228,7 @@
         </div>
       </div>
       <!-- Anual (featured) -->
-      <div class="plan-card featured">
+      <div class="plan-card featured wow animate__animated animate__tada" data-wow-delay="3.5s">
         <div class="plan-header">
           <div class="plan-name">ANUAL</div>
           <div class="plan-badge"><span>★</span></div>
@@ -234,7 +244,7 @@
         </div>
       </div>
       <!-- Plan Samsung -->
-      <div class="plan-card">
+      <div class="plan-card wow animate__animated animate__tada" data-wow-delay="4.5s">
         <div class="plan-header">
           <div class="plan-name">PLAN SAMSUNG</div>
         </div>
@@ -252,7 +262,7 @@
       <div class="planes-track-outer">
         <div class="planes-track" id="planesTrack">
 
-          <div class="plan-card">
+          <div class="plan-card wow animate__animated animate__tada" data-wow-delay="1.5s">
             <div class="plan-header"><div class="plan-name">Mensual</div></div>
             <div class="plan-body">
               <div class="plan-feature">Todo el contenido</div>
@@ -264,7 +274,7 @@
             </div>
           </div>
 
-          <div class="plan-card">
+          <div class="plan-card wow animate__animated animate__tada" data-wow-delay="2.5s">
             <div class="plan-header"><div class="plan-name">Semestral</div></div>
             <div class="plan-body">
               <div class="plan-feature">Todo el contenido</div>
@@ -277,7 +287,7 @@
             </div>
           </div>
 
-          <div class="plan-card featured">
+          <div class="plan-card featured wow animate__animated animate__tada" data-wow-delay="3.5s">
             <div class="plan-header">
               <div class="plan-name">Anual</div>
               <div class="plan-badge"><span>★</span></div>
@@ -293,7 +303,7 @@
             </div>
           </div>
 
-          <div class="plan-card">
+          <div class="plan-card wow animate__animated animate__tada" data-wow-delay="4.5s">
             <div class="plan-header"><div class="plan-name">Plan Samsung</div></div>
             <div class="plan-body">
               <div class="plan-feature">Todo el contenido</div>
@@ -323,77 +333,67 @@
 <section class="faq-section">
   <div class="faq-inner">
 
-    <h2 class="faq-title">PREGUNTAS FRECUENTES</h2>
+    <h2 class="faq-title wow animate__animated animate__bounceInDown">PREGUNTAS FRECUENTES</h2>
 
     <div class="faq-list">
 
-      <div class="faq-item">
+      <div class="faq-item wow animate__animated animate__flipInX" data-wow-delay="1s">
         <button class="faq-question">
-          <span class="faq-q-text">¿Qué puedo ver en TDMAX?</span>
+          <span class="faq-q-text">¿Puedo ver fútbol en vivo usando TDMAX?</span>
           <span class="faq-chevron"><svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg></span>
         </button>
         <div class="faq-answer">
-          <p class="faq-a-text">En TDMAX podés disfrutar de todo el fútbol nacional e internacional, canales en vivo como Teletica, Canal 6, Canal 8, Canal 11, FUTV, Tigo Sports y más. También encontrás contenido exclusivo, programas de entretenimiento, radios en vivo y eventos especiales.</p>
+          <p class="faq-a-text">Sí. Una vez que te hayás registrado y tengás una suscripción activa, podrás disfrutar en vivo de todos los eventos publicados en la app.</p>
         </div>
       </div>
 
-      <div class="faq-item">
+      <div class="faq-item wow animate__animated animate__flipInX" data-wow-delay="1.5s">
         <button class="faq-question">
-          <span class="faq-q-text">¿Necesito una suscripción?</span>
+          <span class="faq-q-text">¿Qué otro tipo de contenido puedo encontrar en la app?</span>
           <span class="faq-chevron"><svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg></span>
         </button>
         <div class="faq-answer">
-          <p class="faq-a-text">Sí, para acceder a todo el contenido de TDMAX necesitás una suscripción activa. Podés elegir entre los planes Mensual, Semestral, Anual o Plan Samsung, según lo que mejor se adapte a tus necesidades. Podés cancelar en cualquier momento.</p>
+          <p class="faq-a-text">Con la suscripción, tendrás acceso a la señal 24/7 de Teletica Canal 7, Repretel canales 6 y 11, TD+, TD+2, FUTV y Teletica Radio. También, podrás disfrutar de contenidos como videotecas, goles, resúmenes y jugadas destacadas; documentales, películas nacionales y programas como La Platea, Contragolpe y Smart Fútbol. Finalmente, tendrás una variedad de contenido en entretenimiento y estilo de vida.</p>
         </div>
       </div>
 
-      <div class="faq-item">
+      <div class="faq-item wow animate__animated animate__flipInX" data-wow-delay="2s">
         <button class="faq-question">
-          <span class="faq-q-text">¿Cuántos dispositivos puedo usar al mismo tiempo?</span>
+          <span class="faq-q-text">Si vivo fuera de Costa Rica, ¿Puedo usar TDMAX?</span>
           <span class="faq-chevron"><svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg></span>
         </button>
         <div class="faq-answer">
-          <p class="faq-a-text">Todos los planes de TDMAX permiten el uso simultáneo en hasta 4 dispositivos. Podés ver contenido en tu teléfono, tablet, computadora o smart TV al mismo tiempo con una sola cuenta.</p>
+          <p class="faq-a-text">Por supuesto. TDMAX está disponible para todas las personas en todo el mundo, sin embargo, es posible que algunos eventos en vivo tengan restricciones por temas legales para ser transmitidos fuera de Costa Rica, por lo tanto, no podrás verlos.</p>
         </div>
       </div>
 
-      <div class="faq-item">
+      <div class="faq-item wow animate__animated animate__flipInX" data-wow-delay="2.5s">
         <button class="faq-question">
-          <span class="faq-q-text">¿Puedo ver TDMAX fuera de Costa Rica?</span>
+          <span class="faq-q-text">¿Cuáles torneos de fútbol costarricense puedo ver?</span>
           <span class="faq-chevron"><svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg></span>
         </button>
         <div class="faq-answer">
-          <p class="faq-a-text">TDMAX está disponible principalmente para usuarios en Costa Rica. El acceso desde el exterior puede estar limitado dependiendo del contenido y los derechos de transmisión. Te recomendamos verificar la disponibilidad desde tu ubicación.</p>
+          <p class="faq-a-text">En la app TDMAX, podés disfrutar de los mejores partidos en vivo del fútbol de primera división masculino y femenino, Liga de Ascenso y los partidos de las Selecciones Mayores de Fútbol Masculina y Femenina. Además, podés vivir las eliminatorias CONCACAF y eventos FIFA.</p>
         </div>
       </div>
 
-      <div class="faq-item">
+      <div class="faq-item wow animate__animated animate__flipInX" data-wow-delay="3s">
         <button class="faq-question">
-          <span class="faq-q-text">¿En qué dispositivos puedo ver TDMAX?</span>
+          <span class="faq-q-text">¿Cuáles son los medios para recibir soporte sobre mi cuenta o suscripción?</span>
           <span class="faq-chevron"><svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg></span>
         </button>
         <div class="faq-answer">
-          <p class="faq-a-text">TDMAX está disponible en smartphones y tablets Android e iOS, navegadores web (Chrome, Firefox, Safari), Smart TVs con Android TV, y dispositivos Samsung. Próximamente en más plataformas.</p>
+          <p class="faq-a-text">Podés contactar a nuestro equipo de Soporte a través del correo electrónico soportetdmax@teletica.com, las redes sociales de TDMAX en Facebook e Instagram o al WhatsApp 4117-1500.</p>
         </div>
       </div>
 
-      <div class="faq-item">
+      <div class="faq-item wow animate__animated animate__flipInX" data-wow-delay="3.5s">
         <button class="faq-question">
-          <span class="faq-q-text">¿Puedo cambiar o cancelar mi plan?</span>
+          <span class="faq-q-text"> ¿Debo estar suscrito a algún plan para ver el contenido de TDMAX? </span>
           <span class="faq-chevron"><svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg></span>
         </button>
         <div class="faq-answer">
-          <p class="faq-a-text">Sí, podés cambiar de plan o cancelar tu suscripción en cualquier momento desde tu perfil en la app o el sitio web. Los cambios aplican al siguiente ciclo de facturación.</p>
-        </div>
-      </div>
-
-      <div class="faq-item">
-        <button class="faq-question">
-          <span class="faq-q-text">¿Dónde puedo pedir ayuda?</span>
-          <span class="faq-chevron"><svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg></span>
-        </button>
-        <div class="faq-answer">
-          <p class="faq-a-text">Podés contactar a nuestro equipo de soporte a través del chat en vivo dentro de la app, por correo electrónico o visitando el centro de ayuda en nuestro sitio web. Estamos disponibles para ayudarte todos los días.</p>
+          <p class="faq-a-text">Sí. Para poder observar nuestro contenido debés estar suscrito a alguno de nuestros planes.</p>
         </div>
       </div>
 
