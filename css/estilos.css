@@ -902,11 +902,19 @@ body {
 }
 
 .plan-price sup {
-  font-size: 1.2rem;
-  vertical-align: super;
-  margin-right: 2px;
+ font-size: 35px;
+ /* vertical-align: super; */
+ margin-right: 2px;
+ top: 0px;
 }
-
+.plan-price b {
+  top: -15px;
+  position: relative;
+  font-size: 20px;
+}
+.plan-price small {
+  font-size: 20px;
+}
 .plan-savings {
   font-size: .8rem;
   color: #7c3aed;
