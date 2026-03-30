@@ -884,6 +884,24 @@ body {
   background: #1a56db;
   flex-shrink: 0;
 }
+.plan-feature-sam {
+  font-size: .88rem;
+  color: #c0cce0;
+  padding: 9px 0;
+  border-bottom: 1px solid rgba(255,255,255,.06);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.plan-feature-sam::before {
+  content: '';
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #1a56db;
+  flex-shrink: 0;
+  margin-top: -60px;
+}
 
 .plan-card.featured .plan-feature::before {
   background: #7c3aed;
