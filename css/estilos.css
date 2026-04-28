@@ -101,6 +101,10 @@ body {
   background: url("../images/desktop/back-sele.jpg");
   background-size: 100% 100%;
 }
+.slide-4 .slide-bg {
+  background: url("../images/desktop/samsung-background-desktop.webp");
+  background-size: 100% 100%;
+}
 
 /* Radial glow behind athletes */
 .slide-bg::after {
