@@ -198,7 +198,25 @@ body {
   transform: translateY(-2px);
   box-shadow: 0 8px 32px rgba(26,86,219,.6);
 }
-
+.btn-calendar {
+  font-family: 'sanfra', sans-serif;
+  font-size: 20px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #000;
+  background: #afea00;
+  border: none;
+  padding: 15px 60px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background .2s, transform .15s, box-shadow .2s;
+  box-shadow: 0 4px 24px rgba(26, 86, 219, .45);
+}
+.btn-calendar:hover {
+  background: #afea00;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 32px rgba(26,86,219,.6);
+}
 .btn-plans {
   font-family: 'sanfra regular', sans-serif;
   font-size: 22px;
@@ -1453,5 +1471,9 @@ background: linear-gradient(149deg, rgba(21, 29, 39, 1) 0%, rgba(0, 1, 3, 1) 100
   }
   .planes-track-outer {
     padding-left: calc(7vw - 8px);
+  }
+  .btn-calendar {
+    font-size: 15px;
+    margin-top: 5px;
   }
 }
