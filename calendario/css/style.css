@@ -1,0 +1,156 @@
+/* ═══════════════════════════════════════════════════
+   Calendario Copa Mundial de la FIFA 2026 — Teletica
+═══════════════════════════════════════════════════ */
+
+/* ─── Base ──────────────────────────────────────── */
+body.calendario {
+  background-image: url('../img/background.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-attachment: fixed;
+  font-family: 'Roboto Condensed', sans-serif;
+  margin: 0;
+}
+
+header {
+  max-width: 1200px;
+  text-align: center;
+  margin: 0 auto 20px auto;
+}
+
+header img { width: 100%; }
+
+#ContenedorPrincipal {
+  max-width: 750px;
+  margin: 0 auto;
+}
+
+/* ─── Títulos de instancia ───────────────────────── */
+h2.Instancia {
+  font-size: 30px;
+  color: #fff;
+  line-height: 32px;
+  text-align: center;
+  margin: 25px auto 0 auto;
+}
+
+p.intro {
+  font-size: 21px;
+  line-height: 24px;
+  color: #fff;
+  text-align: center;
+  margin: 0 auto;
+}
+
+/* ─── Tabla ──────────────────────────────────────── */
+.tableFifaWC-26 {
+  width: 96%;
+  border-collapse: collapse;
+  margin: 10px 2% 15px;
+  color: #fff;
+  text-align: center;
+  background-color: transparent;
+}
+
+.tableFifaWC-26 thead {
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.tableFifaWC-26 tr { height: 28px; }
+
+.tableFifaWC-26 tr.bordeAbajo {
+  border-bottom: 1px solid rgba(255,255,255,0.15);
+}
+
+.tableFifaWC-26 td {
+  font-weight: 400;
+  font-size: 15px;
+  text-align: center;
+}
+
+.tableFifaWC-26 td img { padding-top: 5px; }
+
+.verditoo { color: #BFFF27; }
+
+.tableFifaWC-26 td.titles {
+  font-size: 15px;
+  line-height: 17px;
+  text-align: center;
+}
+
+.tableFifaWC-26 td.fecha {
+  text-align: left !important;
+  padding-left: 5px;
+}
+
+.tableFifaWC-26 td.hora {
+  text-align: right !important;
+  padding-right: 25px;
+}
+
+.intermedio {
+  background-color: rgba(0,0,0,0.3);
+  border-radius: 5px;
+}
+
+/* ─── Lanzador ───────────────────────────────────── */
+.lanzador {
+  width: 100%;
+  margin: 50px auto;
+  text-align: center;
+}
+
+/* ─── Botón ──────────────────────────────────────── */
+.boton {
+  display: inline-block;
+  padding: 10px 40px;
+  background-color: #BFFF27;
+  color: #1f0782;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-radius: 25px;
+  border: none;
+  font-size: 18px;
+  line-height: 22px;
+  margin-top: 50px;
+}
+
+/* ─── Footer ─────────────────────────────────────── */
+footer {
+  width: 100%;
+  text-align: center;
+  padding-bottom: 7px;
+  margin-top: 10px;
+  background-color: rgba(0,0,0,0.6);
+}
+
+footer img {
+  width: 583px;
+  margin: 0 auto -10px auto;
+  display: block;
+}
+
+/* ─── Responsivo ─────────────────────────────────── */
+@media (max-width: 600px) {
+  .tableFifaWC-26 td        { font-size: 12px; }
+  .tableFifaWC-26 td.hora   { padding-right: 15px; }
+  footer img                { width: 400px; }
+  .lanzador img             {width: 90%;}
+}
+
+@media (max-width: 450px) {
+  h2.Instancia              { font-size: 20px; margin: 5px auto 0 auto; }
+  .tableFifaWC-26 tr        { height: 24px; }
+  .tableFifaWC-26 td        { font-size: 9px; }
+  .tableFifaWC-26 td.titles { font-size: 10px; }
+  .tableFifaWC-26 td img    { width: 30px; padding-left: 4px; }
+  .tableFifaWC-26 td.hora   { padding-right: 15px; }
+  footer img                { width: 250px; }
+}
+
+@media screen and (min-width: 768px) {
+  #ContenedorPrincipal      { max-width: 1200px; }
+  .tableFifaWC-26 td        { font-size: 18px; line-height: 25px; }
+}
