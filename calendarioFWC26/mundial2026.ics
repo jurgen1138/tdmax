@@ -10,7 +10,7 @@ BEGIN:VEVENT
 DTSTART:20260611T130000
 DTEND:20260611T150000
 SUMMARY:⚽ México vs Sudáfrica
-DESCRIPTION:Fase de Grupos - Copa Mundial FIFA 2026\nRadio: 91.5 FM Teletica Radio\nTV: Canal 7 / TDMAX → FOX+
+DESCRIPTION:Fase de Grupos - Copa Mundial FIFA 2026\nRadio: 91.5 FM Teletica\nTV: Canal 7\nAPP: TDMAX → FOX+
 CATEGORIES:Fase de Grupos
 END:VEVENT
 
@@ -18,7 +18,7 @@ BEGIN:VEVENT
 DTSTART:20260611T180000
 DTEND:20260611T200000
 SUMMARY:⚽ Rep. Corea vs Chequia
-DESCRIPTION:Fase de Grupos - Copa Mundial FIFA 2026\nRadio: 91.5 FM Teletica Radio\nTV: TDMAX → FOX+
+DESCRIPTION:Fase de Grupos - Copa Mundial FIFA 2026\nRadio: 91.5 FM Teletica\nTV: -\nAPP: TDMAX → FOX+
 CATEGORIES:Fase de Grupos
 END:VEVENT
 
@@ -26,7 +26,7 @@ BEGIN:VEVENT
 DTSTART:20260612T130000
 DTEND:20260612T150000
 SUMMARY:⚽ Canadá vs Bosnia Herzegovina
-DESCRIPTION:Fase de Grupos - Copa Mundial FIFA 2026\nRadio: 91.5 FM Teletica Radio\nTV: TDMAX → FOX+
+DESCRIPTION:Fase de Grupos - Copa Mundial FIFA 2026\nRadio: 91.5 FM Teletica\nTV: -\nAPP: TDMAX → FOX+
 CATEGORIES:Fase de Grupos
 END:VEVENT
 
@@ -34,7 +34,7 @@ BEGIN:VEVENT
 DTSTART:20260612T190000
 DTEND:20260612T210000
 SUMMARY:⚽ E.E.U.U. vs Paraguay
-DESCRIPTION:Fase de Grupos - Copa Mundial FIFA 2026\nRadio: 91.5 FM Teletica Radio\nTV: Canal 7 / TDMAX → FOX+
+DESCRIPTION:Fase de Grupos - Copa Mundial FIFA 2026\nRadio: 91.5 FM Teletica\nTV: Canal 7\nAPP: TDMAX → FOX+
 CATEGORIES:Fase de Grupos
 END:VEVENT
 
@@ -42,7 +42,7 @@ BEGIN:VEVENT
 DTSTART:20260613T130000
 DTEND:20260613T150000
 SUMMARY:⚽ Catar vs Suiza
-DESCRIPTION:Fase de Grupos - Copa Mundial FIFA 2026\nRadio: 91.5 FM Teletica Radio\nTV: TDMAX → FOX+
+DESCRIPTION:Fase de Grupos - Copa Mundial FIFA 2026\nRadio: 91.5 FM Teletica\nTV: -\nAPP: TDMAX → FOX+
 CATEGORIES:Fase de Grupos
 END:VEVENT
 
@@ -50,7 +50,7 @@ BEGIN:VEVENT
 DTSTART:20260613T160000
 DTEND:20260613T180000
 SUMMARY:⚽ Brasil vs Marruecos
-DESCRIPTION:Fase de Grupos - Copa Mundial FIFA 2026\nRadio: 91.5 FM Teletica Radio\nTV: TDMAX → FOX+
+DESCRIPTION:Fase de Grupos - Copa Mundial FIFA 2026\nRadio: 91.5 FM Teletica\nTV: -\nAPP: TDMAX → FOX+
 CATEGORIES:Fase de Grupos
 END:VEVENT
 
@@ -58,7 +58,7 @@ BEGIN:VEVENT
 DTSTART:20260613T190000
 DTEND:20260613T210000
 SUMMARY:⚽ Haití vs Escocia
-DESCRIPTION:Fase de Grupos - Copa Mundial FIFA 2026\nRadio: 91.5 FM Teletica Radio\nTV: TDMAX → FOX+
+DESCRIPTION:Fase de Grupos - Copa Mundial FIFA 2026\nRadio: 91.5 FM Teletica\nTV: -\nAPP: TDMAX → FOX+
 CATEGORIES:Fase de Grupos
 END:VEVENT
 
@@ -66,7 +66,7 @@ BEGIN:VEVENT
 DTSTART:20260613T220000
 DTEND:20260614T000000
 SUMMARY:⚽ Australia vs Turquía
-DESCRIPTION:Fase de Grupos - Copa Mundial FIFA 2026\nRadio: 91.5 FM Teletica Radio\nTV: TDMAX → FOX+
+DESCRIPTION:Fase de Grupos - Copa Mundial FIFA 2026\nRadio: 91.5 FM Teletica\nTV: -\nAPP: TDMAX → FOX+
 CATEGORIES:Fase de Grupos
 END:VEVENT
 
@@ -74,7 +74,7 @@ BEGIN:VEVENT
 DTSTART:20260614T110000
 DTEND:20260614T130000
 SUMMARY:⚽ Alemania vs Curazao
-DESCRIPTION:Fase de Grupos - Copa Mundial FIFA 2026\nRadio: 91.5 FM Teletica Radio\nTV: TDMAX → FOX+
+DESCRIPTION:Fase de Grupos - Copa Mundial FIFA 2026\nRadio: 91.5 FM Teletica\nTV: -\nAPP: TDMAX → FOX+
 CATEGORIES:Fase de Grupos
 END:VEVENT
 
@@ -82,7 +82,7 @@ BEGIN:VEVENT
 DTSTART:20260614T140000
 DTEND:20260614T160000
 SUMMARY:⚽ Países Bajos vs Japón
-DESCRIPTION:Fase de Grupos - Copa Mundial FIFA 2026\nRadio: 91.5 FM Teletica Radio\nTV: Canal 7 / TDMAX → FOX+
+DESCRIPTION:Fase de Grupos - Copa Mundial FIFA 2026\nRadio: 91.5 FM Teletica\nTV: Canal 7\nAPP: TDMAX → FOX+
 CATEGORIES:Fase de Grupos
 END:VEVENT
 
@@ -90,7 +90,7 @@ BEGIN:VEVENT
 DTSTART:20260614T170000
 DTEND:20260614T190000
 SUMMARY:⚽ Costa de Marfil vs Ecuador
-DESCRIPTION:Fase de Grupos - Copa Mundial FIFA 2026\nRadio: 91.5 FM Teletica Radio\nTV: TDMAX → FOX+
+DESCRIPTION:Fase de Grupos - Copa Mundial FIFA 2026\nRadio: 91.5 FM Teletica\nTV: -\nAPP: TDMAX → FOX+
 CATEGORIES:Fase de Grupos
 END:VEVENT
 
@@ -98,7 +98,7 @@ BEGIN:VEVENT
 DTSTART:20260614T200000
 DTEND:20260614T220000
 SUMMARY:⚽ Suecia vs Túnez
-DESCRIPTION:Fase de Grupos - Copa Mundial FIFA 2026\nRadio: 91.5 FM Teletica Radio\nTV: TDMAX → FOX+
+DESCRIPTION:Fase de Grupos - Copa Mundial FIFA 2026\nRadio: 91.5 FM Teletica\nTV: -\nAPP: TDMAX → FOX+
 CATEGORIES:Fase de Grupos
 END:VEVENT
 
@@ -106,7 +106,7 @@ BEGIN:VEVENT
 DTSTART:20260615T100000
 DTEND:20260615T120000
 SUMMARY:⚽ España vs Cabo Verde
-DESCRIPTION:Fase de Grupos - Copa Mundial FIFA 2026\nRadio: 91.5 FM Teletica Radio\nTV: TDMAX → FOX+
+DESCRIPTION:Fase de Grupos - Copa Mundial FIFA 2026\nRadio: 91.5 FM Teletica\nTV: -\nAPP: TDMAX → FOX+
 CATEGORIES:Fase de Grupos
 END:VEVENT
 
@@ -114,7 +114,7 @@ BEGIN:VEVENT
 DTSTART:20260615T130000
 DTEND:20260615T150000
 SUMMARY:⚽ Bélgica vs Egipto
-DESCRIPTION:Fase de Grupos - Copa Mundial FIFA 2026\nRadio: 91.5 FM Teletica Radio\nTV: TDMAX → FOX+
+DESCRIPTION:Fase de Grupos - Copa Mundial FIFA 2026\nRadio: 91.5 FM Teletica\nTV: -\nAPP: TDMAX → FOX+
 CATEGORIES:Fase de Grupos
 END:VEVENT
 
@@ -122,7 +122,7 @@ BEGIN:VEVENT
 DTSTART:20260615T160000
 DTEND:20260615T180000
 SUMMARY:⚽ Arabia Saudí vs Uruguay
-DESCRIPTION:Fase de Grupos - Copa Mundial FIFA 2026\nRadio: 91.5 FM Teletica Radio\nTV: Canal 7 / TDMAX → FOX+
+DESCRIPTION:Fase de Grupos - Copa Mundial FIFA 2026\nRadio: 91.5 FM Teletica\nTV: Canal 7\nAPP: TDMAX → FOX+
 CATEGORIES:Fase de Grupos
 END:VEVENT
 
@@ -130,7 +130,7 @@ BEGIN:VEVENT
 DTSTART:20260615T190000
 DTEND:20260615T210000
 SUMMARY:⚽ Irán vs Nueva Zelanda
-DESCRIPTION:Fase de Grupos - Copa Mundial FIFA 2026\nRadio: 91.5 FM Teletica Radio\nTV: TDMAX → FOX+
+DESCRIPTION:Fase de Grupos - Copa Mundial FIFA 2026\nRadio: 91.5 FM Teletica\nTV: -\nAPP: TDMAX → FOX+
 CATEGORIES:Fase de Grupos
 END:VEVENT
 
@@ -138,7 +138,7 @@ BEGIN:VEVENT
 DTSTART:20260616T130000
 DTEND:20260616T150000
 SUMMARY:⚽ Francia vs Senegal
-DESCRIPTION:Fase de Grupos - Copa Mundial FIFA 2026\nRadio: 91.5 FM Teletica Radio\nTV: Canal 7 / TDMAX → FOX+
+DESCRIPTION:Fase de Grupos - Copa Mundial FIFA 2026\nRadio: 91.5 FM Teletica\nTV: Canal 7\nAPP: TDMAX → FOX+
 CATEGORIES:Fase de Grupos
 END:VEVENT
 
@@ -146,7 +146,7 @@ BEGIN:VEVENT
 DTSTART:20260616T160000
 DTEND:20260616T180000
 SUMMARY:⚽ Irak vs Noruega
-DESCRIPTION:Fase de Grupos - Copa Mundial FIFA 2026\nRadio: 91.5 FM Teletica Radio\nTV: TDMAX → FOX+
+DESCRIPTION:Fase de Grupos - Copa Mundial FIFA 2026\nRadio: 91.5 FM Teletica\nTV: -\nAPP: TDMAX → FOX+
 CATEGORIES:Fase de Grupos
 END:VEVENT
 
@@ -154,7 +154,7 @@ BEGIN:VEVENT
 DTSTART:20260616T190000
 DTEND:20260616T210000
 SUMMARY:⚽ Argentina vs Argelia
-DESCRIPTION:Fase de Grupos - Copa Mundial FIFA 2026\nRadio: 91.5 FM Teletica Radio\nTV: TDMAX → FOX+
+DESCRIPTION:Fase de Grupos - Copa Mundial FIFA 2026\nRadio: 91.5 FM Teletica\nTV: -\nAPP: TDMAX → FOX+
 CATEGORIES:Fase de Grupos
 END:VEVENT
 
@@ -162,7 +162,7 @@ BEGIN:VEVENT
 DTSTART:20260616T220000
 DTEND:20260617T000000
 SUMMARY:⚽ Austria vs Jordania
-DESCRIPTION:Fase de Grupos - Copa Mundial FIFA 2026\nRadio: 91.5 FM Teletica Radio\nTV: TDMAX → FOX+
+DESCRIPTION:Fase de Grupos - Copa Mundial FIFA 2026\nRadio: 91.5 FM Teletica\nTV: -\nAPP: TDMAX → FOX+
 CATEGORIES:Fase de Grupos
 END:VEVENT
 
@@ -170,7 +170,7 @@ BEGIN:VEVENT
 DTSTART:20260617T110000
 DTEND:20260617T130000
 SUMMARY:⚽ Portugal vs RD Congo
-DESCRIPTION:Fase de Grupos - Copa Mundial FIFA 2026\nRadio: 91.5 FM Teletica Radio\nTV: TDMAX → FOX+
+DESCRIPTION:Fase de Grupos - Copa Mundial FIFA 2026\nRadio: 91.5 FM Teletica\nTV: -\nAPP: TDMAX → FOX+
 CATEGORIES:Fase de Grupos
 END:VEVENT
 
@@ -178,7 +178,7 @@ BEGIN:VEVENT
 DTSTART:20260617T140000
 DTEND:20260617T160000
 SUMMARY:⚽ Inglaterra vs Croacia
-DESCRIPTION:Fase de Grupos - Copa Mundial FIFA 2026\nRadio: 91.5 FM Teletica Radio\nTV: Canal 7 / TDMAX → FOX+
+DESCRIPTION:Fase de Grupos - Copa Mundial FIFA 2026\nRadio: 91.5 FM Teletica\nTV: Canal 7\nAPP: TDMAX → FOX+
 CATEGORIES:Fase de Grupos
 END:VEVENT
 
@@ -186,7 +186,7 @@ BEGIN:VEVENT
 DTSTART:20260617T170000
 DTEND:20260617T190000
 SUMMARY:⚽ Ghana vs Panamá
-DESCRIPTION:Fase de Grupos - Copa Mundial FIFA 2026\nRadio: 91.5 FM Teletica Radio\nTV: TDMAX → FOX+
+DESCRIPTION:Fase de Grupos - Copa Mundial FIFA 2026\nRadio: 91.5 FM Teletica\nTV: -\nAPP: TDMAX → FOX+
 CATEGORIES:Fase de Grupos
 END:VEVENT
 
@@ -194,7 +194,7 @@ BEGIN:VEVENT
 DTSTART:20260617T200000
 DTEND:20260617T220000
 SUMMARY:⚽ Uzbekistán vs Colombia
-DESCRIPTION:Fase de Grupos - Copa Mundial FIFA 2026\nRadio: 91.5 FM Teletica Radio\nTV: TDMAX → FOX+
+DESCRIPTION:Fase de Grupos - Copa Mundial FIFA 2026\nRadio: 91.5 FM Teletica\nTV: -\nAPP: TDMAX → FOX+
 CATEGORIES:Fase de Grupos
 END:VEVENT
 
@@ -202,7 +202,7 @@ BEGIN:VEVENT
 DTSTART:20260618T100000
 DTEND:20260618T120000
 SUMMARY:⚽ Chequia vs Sudáfrica
-DESCRIPTION:Fase de Grupos - Copa Mundial FIFA 2026\nRadio: 91.5 FM Teletica Radio\nTV: TDMAX → FOX+
+DESCRIPTION:Fase de Grupos - Copa Mundial FIFA 2026\nRadio: 91.5 FM Teletica\nTV: -\nAPP: TDMAX → FOX+
 CATEGORIES:Fase de Grupos
 END:VEVENT
 
@@ -210,7 +210,7 @@ BEGIN:VEVENT
 DTSTART:20260618T130000
 DTEND:20260618T150000
 SUMMARY:⚽ Suiza vs Bosnia Herzegovina
-DESCRIPTION:Fase de Grupos - Copa Mundial FIFA 2026\nRadio: 91.5 FM Teletica Radio\nTV: TDMAX → FOX+
+DESCRIPTION:Fase de Grupos - Copa Mundial FIFA 2026\nRadio: 91.5 FM Teletica\nTV: -\nAPP: TDMAX → FOX+
 CATEGORIES:Fase de Grupos
 END:VEVENT
 
@@ -218,7 +218,7 @@ BEGIN:VEVENT
 DTSTART:20260618T160000
 DTEND:20260618T180000
 SUMMARY:⚽ Canadá vs Catar
-DESCRIPTION:Fase de Grupos - Copa Mundial FIFA 2026\nRadio: 91.5 FM Teletica Radio\nTV: TDMAX → FOX+
+DESCRIPTION:Fase de Grupos - Copa Mundial FIFA 2026\nRadio: 91.5 FM Teletica\nTV: -\nAPP: TDMAX → FOX+
 CATEGORIES:Fase de Grupos
 END:VEVENT
 
@@ -226,7 +226,7 @@ BEGIN:VEVENT
 DTSTART:20260618T190000
 DTEND:20260618T210000
 SUMMARY:⚽ México vs Rep. Corea
-DESCRIPTION:Fase de Grupos - Copa Mundial FIFA 2026\nRadio: 91.5 FM Teletica Radio\nTV: TDMAX → FOX+
+DESCRIPTION:Fase de Grupos - Copa Mundial FIFA 2026\nRadio: 91.5 FM Teletica\nTV: -\nAPP: TDMAX → FOX+
 CATEGORIES:Fase de Grupos
 END:VEVENT
 
@@ -234,7 +234,7 @@ BEGIN:VEVENT
 DTSTART:20260619T130000
 DTEND:20260619T150000
 SUMMARY:⚽ E.E.U.U. vs Australia
-DESCRIPTION:Fase de Grupos - Copa Mundial FIFA 2026\nRadio: 91.5 FM Teletica Radio\nTV: TDMAX → FOX+
+DESCRIPTION:Fase de Grupos - Copa Mundial FIFA 2026\nRadio: 91.5 FM Teletica\nTV: -\nAPP: TDMAX → FOX+
 CATEGORIES:Fase de Grupos
 END:VEVENT
 
@@ -242,7 +242,7 @@ BEGIN:VEVENT
 DTSTART:20260619T160000
 DTEND:20260619T180000
 SUMMARY:⚽ Escocia vs Marruecos
-DESCRIPTION:Fase de Grupos - Copa Mundial FIFA 2026\nRadio: 91.5 FM Teletica Radio\nTV: TDMAX → FOX+
+DESCRIPTION:Fase de Grupos - Copa Mundial FIFA 2026\nRadio: 91.5 FM Teletica\nTV: -\nAPP: TDMAX → FOX+
 CATEGORIES:Fase de Grupos
 END:VEVENT
 
@@ -250,7 +250,7 @@ BEGIN:VEVENT
 DTSTART:20260619T183000
 DTEND:20260619T203000
 SUMMARY:⚽ Brasil vs Haití
-DESCRIPTION:Fase de Grupos - Copa Mundial FIFA 2026\nRadio: 91.5 FM Teletica Radio\nTV: Canal 7 / TDMAX → FOX+
+DESCRIPTION:Fase de Grupos - Copa Mundial FIFA 2026\nRadio: 91.5 FM Teletica\nTV: Canal 7\nAPP: TDMAX → FOX+
 CATEGORIES:Fase de Grupos
 END:VEVENT
 
@@ -258,7 +258,7 @@ BEGIN:VEVENT
 DTSTART:20260619T210000
 DTEND:20260619T230000
 SUMMARY:⚽ Turquía vs Paraguay
-DESCRIPTION:Fase de Grupos - Copa Mundial FIFA 2026\nRadio: 91.5 FM Teletica Radio\nTV: TDMAX → FOX+
+DESCRIPTION:Fase de Grupos - Copa Mundial FIFA 2026\nRadio: 91.5 FM Teletica\nTV: -\nAPP: TDMAX → FOX+
 CATEGORIES:Fase de Grupos
 END:VEVENT
 
@@ -266,7 +266,7 @@ BEGIN:VEVENT
 DTSTART:20260620T110000
 DTEND:20260620T130000
 SUMMARY:⚽ Países Bajos vs Suecia
-DESCRIPTION:Fase de Grupos - Copa Mundial FIFA 2026\nRadio: 91.5 FM Teletica Radio\nTV: Canal 7 / TDMAX → FOX+
+DESCRIPTION:Fase de Grupos - Copa Mundial FIFA 2026\nRadio: 91.5 FM Teletica\nTV: Canal 7\nAPP: TDMAX → FOX+
 CATEGORIES:Fase de Grupos
 END:VEVENT
 
@@ -274,7 +274,7 @@ BEGIN:VEVENT
 DTSTART:20260620T140000
 DTEND:20260620T160000
 SUMMARY:⚽ Alemania vs Costa de Marfil
-DESCRIPTION:Fase de Grupos - Copa Mundial FIFA 2026\nRadio: 91.5 FM Teletica Radio\nTV: TDMAX → FOX+
+DESCRIPTION:Fase de Grupos - Copa Mundial FIFA 2026\nRadio: 91.5 FM Teletica\nTV: -\nAPP: TDMAX → FOX+
 CATEGORIES:Fase de Grupos
 END:VEVENT
 
@@ -282,7 +282,7 @@ BEGIN:VEVENT
 DTSTART:20260620T180000
 DTEND:20260620T200000
 SUMMARY:⚽ Ecuador vs Curazao
-DESCRIPTION:Fase de Grupos - Copa Mundial FIFA 2026\nRadio: 91.5 FM Teletica Radio\nTV: TDMAX → FOX+
+DESCRIPTION:Fase de Grupos - Copa Mundial FIFA 2026\nRadio: 91.5 FM Teletica\nTV: -\nAPP: TDMAX → FOX+
 CATEGORIES:Fase de Grupos
 END:VEVENT
 
@@ -290,7 +290,7 @@ BEGIN:VEVENT
 DTSTART:20260620T220000
 DTEND:20260621T000000
 SUMMARY:⚽ Túnez vs Japón
-DESCRIPTION:Fase de Grupos - Copa Mundial FIFA 2026\nRadio: 91.5 FM Teletica Radio\nTV: TDMAX → FOX+
+DESCRIPTION:Fase de Grupos - Copa Mundial FIFA 2026\nRadio: 91.5 FM Teletica\nTV: -\nAPP: TDMAX → FOX+
 CATEGORIES:Fase de Grupos
 END:VEVENT
 
@@ -298,7 +298,7 @@ BEGIN:VEVENT
 DTSTART:20260621T100000
 DTEND:20260621T120000
 SUMMARY:⚽ España vs Arabia Saudí
-DESCRIPTION:Fase de Grupos - Copa Mundial FIFA 2026\nRadio: 91.5 FM Teletica Radio\nTV: Canal 7 / TDMAX → FOX+
+DESCRIPTION:Fase de Grupos - Copa Mundial FIFA 2026\nRadio: 91.5 FM Teletica\nTV: Canal 7\nAPP: TDMAX → FOX+
 CATEGORIES:Fase de Grupos
 END:VEVENT
 
@@ -306,7 +306,7 @@ BEGIN:VEVENT
 DTSTART:20260621T130000
 DTEND:20260621T150000
 SUMMARY:⚽ Bélgica vs Irán
-DESCRIPTION:Fase de Grupos - Copa Mundial FIFA 2026\nRadio: 91.5 FM Teletica Radio\nTV: TDMAX → FOX+
+DESCRIPTION:Fase de Grupos - Copa Mundial FIFA 2026\nRadio: 91.5 FM Teletica\nTV: -\nAPP: TDMAX → FOX+
 CATEGORIES:Fase de Grupos
 END:VEVENT
 
@@ -314,7 +314,7 @@ BEGIN:VEVENT
 DTSTART:20260621T160000
 DTEND:20260621T180000
 SUMMARY:⚽ Uruguay vs Cabo Verde
-DESCRIPTION:Fase de Grupos - Copa Mundial FIFA 2026\nRadio: 91.5 FM Teletica Radio\nTV: TDMAX → FOX+
+DESCRIPTION:Fase de Grupos - Copa Mundial FIFA 2026\nRadio: 91.5 FM Teletica\nTV: -\nAPP: TDMAX → FOX+
 CATEGORIES:Fase de Grupos
 END:VEVENT
 
@@ -322,7 +322,7 @@ BEGIN:VEVENT
 DTSTART:20260621T190000
 DTEND:20260621T210000
 SUMMARY:⚽ Nueva Zelanda vs Egipto
-DESCRIPTION:Fase de Grupos - Copa Mundial FIFA 2026\nRadio: 91.5 FM Teletica Radio\nTV: TDMAX → FOX+
+DESCRIPTION:Fase de Grupos - Copa Mundial FIFA 2026\nRadio: 91.5 FM Teletica\nTV: -\nAPP: TDMAX → FOX+
 CATEGORIES:Fase de Grupos
 END:VEVENT
 
@@ -330,7 +330,7 @@ BEGIN:VEVENT
 DTSTART:20260622T110000
 DTEND:20260622T130000
 SUMMARY:⚽ Argentina vs Austria
-DESCRIPTION:Fase de Grupos - Copa Mundial FIFA 2026\nRadio: 91.5 FM Teletica Radio\nTV: Canal 7 / TDMAX → FOX+
+DESCRIPTION:Fase de Grupos - Copa Mundial FIFA 2026\nRadio: 91.5 FM Teletica\nTV: Canal 7\nAPP: TDMAX → FOX+
 CATEGORIES:Fase de Grupos
 END:VEVENT
 
@@ -338,7 +338,7 @@ BEGIN:VEVENT
 DTSTART:20260622T150000
 DTEND:20260622T170000
 SUMMARY:⚽ Francia vs Irak
-DESCRIPTION:Fase de Grupos - Copa Mundial FIFA 2026\nRadio: 91.5 FM Teletica Radio\nTV: TDMAX → FOX+
+DESCRIPTION:Fase de Grupos - Copa Mundial FIFA 2026\nRadio: 91.5 FM Teletica\nTV: -\nAPP: TDMAX → FOX+
 CATEGORIES:Fase de Grupos
 END:VEVENT
 
@@ -346,7 +346,7 @@ BEGIN:VEVENT
 DTSTART:20260622T180000
 DTEND:20260622T200000
 SUMMARY:⚽ Noruega vs Senegal
-DESCRIPTION:Fase de Grupos - Copa Mundial FIFA 2026\nRadio: 91.5 FM Teletica Radio\nTV: TDMAX → FOX+
+DESCRIPTION:Fase de Grupos - Copa Mundial FIFA 2026\nRadio: 91.5 FM Teletica\nTV: -\nAPP: TDMAX → FOX+
 CATEGORIES:Fase de Grupos
 END:VEVENT
 
@@ -354,7 +354,7 @@ BEGIN:VEVENT
 DTSTART:20260622T210000
 DTEND:20260622T230000
 SUMMARY:⚽ Jordania vs Argelia
-DESCRIPTION:Fase de Grupos - Copa Mundial FIFA 2026\nRadio: 91.5 FM Teletica Radio\nTV: TDMAX → FOX+
+DESCRIPTION:Fase de Grupos - Copa Mundial FIFA 2026\nRadio: 91.5 FM Teletica\nTV: -\nAPP: TDMAX → FOX+
 CATEGORIES:Fase de Grupos
 END:VEVENT
 
@@ -362,7 +362,7 @@ BEGIN:VEVENT
 DTSTART:20260623T110000
 DTEND:20260623T130000
 SUMMARY:⚽ Portugal vs Uzbekistán
-DESCRIPTION:Fase de Grupos - Copa Mundial FIFA 2026\nRadio: 91.5 FM Teletica Radio\nTV: TDMAX → FOX+
+DESCRIPTION:Fase de Grupos - Copa Mundial FIFA 2026\nRadio: 91.5 FM Teletica\nTV: -\nAPP: TDMAX → FOX+
 CATEGORIES:Fase de Grupos
 END:VEVENT
 
@@ -370,7 +370,7 @@ BEGIN:VEVENT
 DTSTART:20260623T140000
 DTEND:20260623T160000
 SUMMARY:⚽ Inglaterra vs Ghana
-DESCRIPTION:Fase de Grupos - Copa Mundial FIFA 2026\nRadio: 91.5 FM Teletica Radio\nTV: TDMAX → FOX+
+DESCRIPTION:Fase de Grupos - Copa Mundial FIFA 2026\nRadio: 91.5 FM Teletica\nTV: -\nAPP: TDMAX → FOX+
 CATEGORIES:Fase de Grupos
 END:VEVENT
 
@@ -378,7 +378,7 @@ BEGIN:VEVENT
 DTSTART:20260623T170000
 DTEND:20260623T190000
 SUMMARY:⚽ Panamá vs Croacia
-DESCRIPTION:Fase de Grupos - Copa Mundial FIFA 2026\nRadio: 91.5 FM Teletica Radio\nTV: TDMAX → FOX+
+DESCRIPTION:Fase de Grupos - Copa Mundial FIFA 2026\nRadio: 91.5 FM Teletica\nTV: -\nAPP: TDMAX → FOX+
 CATEGORIES:Fase de Grupos
 END:VEVENT
 
@@ -386,7 +386,7 @@ BEGIN:VEVENT
 DTSTART:20260623T200000
 DTEND:20260623T220000
 SUMMARY:⚽ Colombia vs R.D. Congo
-DESCRIPTION:Fase de Grupos - Copa Mundial FIFA 2026\nRadio: 91.5 FM Teletica Radio\nTV: Canal 7 / TDMAX → FOX+
+DESCRIPTION:Fase de Grupos - Copa Mundial FIFA 2026\nRadio: 91.5 FM Teletica\nTV: Canal 7\nAPP: TDMAX → FOX+
 CATEGORIES:Fase de Grupos
 END:VEVENT
 
@@ -394,7 +394,7 @@ BEGIN:VEVENT
 DTSTART:20260624T130000
 DTEND:20260624T150000
 SUMMARY:⚽ Suiza vs Canadá
-DESCRIPTION:Fase de Grupos - Copa Mundial FIFA 2026\nRadio: 91.5 FM Teletica Radio\nTV: TDMAX → FOX+
+DESCRIPTION:Fase de Grupos - Copa Mundial FIFA 2026\nRadio: 91.5 FM Teletica\nTV: -\nAPP: TDMAX → FOX+
 CATEGORIES:Fase de Grupos
 END:VEVENT
 
@@ -402,7 +402,7 @@ BEGIN:VEVENT
 DTSTART:20260624T130000
 DTEND:20260624T150000
 SUMMARY:⚽ Bosnia Herzegovina vs Catar
-DESCRIPTION:Fase de Grupos - Copa Mundial FIFA 2026\nRadio: 91.5 FM Teletica Radio\nTV: TDMAX → FOX+
+DESCRIPTION:Fase de Grupos - Copa Mundial FIFA 2026\nRadio: 91.5 FM Teletica\nTV: -\nAPP: TDMAX → FOX+
 CATEGORIES:Fase de Grupos
 END:VEVENT
 
@@ -410,7 +410,7 @@ BEGIN:VEVENT
 DTSTART:20260624T160000
 DTEND:20260624T180000
 SUMMARY:⚽ Escocia vs Brasil
-DESCRIPTION:Fase de Grupos - Copa Mundial FIFA 2026\nRadio: 91.5 FM Teletica Radio\nTV: TDMAX → FOX+
+DESCRIPTION:Fase de Grupos - Copa Mundial FIFA 2026\nRadio: 91.5 FM Teletica\nTV: -\nAPP: TDMAX → FOX+
 CATEGORIES:Fase de Grupos
 END:VEVENT
 
@@ -418,7 +418,7 @@ BEGIN:VEVENT
 DTSTART:20260624T160000
 DTEND:20260624T180000
 SUMMARY:⚽ Marruecos vs Haití
-DESCRIPTION:Fase de Grupos - Copa Mundial FIFA 2026\nRadio: 91.5 FM Teletica Radio\nTV: TDMAX → FOX+
+DESCRIPTION:Fase de Grupos - Copa Mundial FIFA 2026\nRadio: 91.5 FM Teletica\nTV: -\nAPP: TDMAX → FOX+
 CATEGORIES:Fase de Grupos
 END:VEVENT
 
@@ -426,7 +426,7 @@ BEGIN:VEVENT
 DTSTART:20260624T190000
 DTEND:20260624T210000
 SUMMARY:⚽ Chequia vs México
-DESCRIPTION:Fase de Grupos - Copa Mundial FIFA 2026\nRadio: 91.5 FM Teletica Radio\nTV: Canal 7 / TDMAX → FOX+
+DESCRIPTION:Fase de Grupos - Copa Mundial FIFA 2026\nRadio: 91.5 FM Teletica\nTV: Canal 7\nAPP: TDMAX → FOX+
 CATEGORIES:Fase de Grupos
 END:VEVENT
 
@@ -434,7 +434,7 @@ BEGIN:VEVENT
 DTSTART:20260624T190000
 DTEND:20260624T210000
 SUMMARY:⚽ Sudáfrica vs Rep. Corea
-DESCRIPTION:Fase de Grupos - Copa Mundial FIFA 2026\nRadio: 91.5 FM Teletica Radio\nTV: TDMAX → FOX+
+DESCRIPTION:Fase de Grupos - Copa Mundial FIFA 2026\nRadio: 91.5 FM Teletica\nTV: -\nAPP: TDMAX → FOX+
 CATEGORIES:Fase de Grupos
 END:VEVENT
 
@@ -442,7 +442,7 @@ BEGIN:VEVENT
 DTSTART:20260625T140000
 DTEND:20260625T160000
 SUMMARY:⚽ Curazao vs Costa de Marfil
-DESCRIPTION:Fase de Grupos - Copa Mundial FIFA 2026\nRadio: 91.5 FM Teletica Radio\nTV: TDMAX → FOX+
+DESCRIPTION:Fase de Grupos - Copa Mundial FIFA 2026\nRadio: 91.5 FM Teletica\nTV: -\nAPP: TDMAX → FOX+
 CATEGORIES:Fase de Grupos
 END:VEVENT
 
@@ -450,7 +450,7 @@ BEGIN:VEVENT
 DTSTART:20260625T140000
 DTEND:20260625T160000
 SUMMARY:⚽ Ecuador vs Alemania
-DESCRIPTION:Fase de Grupos - Copa Mundial FIFA 2026\nRadio: 91.5 FM Teletica Radio\nTV: Canal 7 / TDMAX → FOX+
+DESCRIPTION:Fase de Grupos - Copa Mundial FIFA 2026\nRadio: 91.5 FM Teletica\nTV: Canal 7\nAPP: TDMAX → FOX+
 CATEGORIES:Fase de Grupos
 END:VEVENT
 
@@ -458,7 +458,7 @@ BEGIN:VEVENT
 DTSTART:20260625T170000
 DTEND:20260625T190000
 SUMMARY:⚽ Japón vs Suecia
-DESCRIPTION:Fase de Grupos - Copa Mundial FIFA 2026\nRadio: 91.5 FM Teletica Radio\nTV: TDMAX → FOX+
+DESCRIPTION:Fase de Grupos - Copa Mundial FIFA 2026\nRadio: 91.5 FM Teletica\nTV: -\nAPP: TDMAX → FOX+
 CATEGORIES:Fase de Grupos
 END:VEVENT
 
@@ -466,7 +466,7 @@ BEGIN:VEVENT
 DTSTART:20260625T170000
 DTEND:20260625T190000
 SUMMARY:⚽ Túnez vs Países Bajos
-DESCRIPTION:Fase de Grupos - Copa Mundial FIFA 2026\nRadio: 91.5 FM Teletica Radio\nTV: TDMAX → FOX+
+DESCRIPTION:Fase de Grupos - Copa Mundial FIFA 2026\nRadio: 91.5 FM Teletica\nTV: -\nAPP: TDMAX → FOX+
 CATEGORIES:Fase de Grupos
 END:VEVENT
 
@@ -474,7 +474,7 @@ BEGIN:VEVENT
 DTSTART:20260625T200000
 DTEND:20260625T220000
 SUMMARY:⚽ Turquía vs E.E.U.U.
-DESCRIPTION:Fase de Grupos - Copa Mundial FIFA 2026\nRadio: 91.5 FM Teletica Radio\nTV: TDMAX → FOX+
+DESCRIPTION:Fase de Grupos - Copa Mundial FIFA 2026\nRadio: 91.5 FM Teletica\nTV: -\nAPP: TDMAX → FOX+
 CATEGORIES:Fase de Grupos
 END:VEVENT
 
@@ -482,7 +482,7 @@ BEGIN:VEVENT
 DTSTART:20260625T200000
 DTEND:20260625T220000
 SUMMARY:⚽ Paraguay vs Australia
-DESCRIPTION:Fase de Grupos - Copa Mundial FIFA 2026\nRadio: 91.5 FM Teletica Radio\nTV: TDMAX → FOX+
+DESCRIPTION:Fase de Grupos - Copa Mundial FIFA 2026\nRadio: 91.5 FM Teletica\nTV: -\nAPP: TDMAX → FOX+
 CATEGORIES:Fase de Grupos
 END:VEVENT
 
@@ -490,7 +490,7 @@ BEGIN:VEVENT
 DTSTART:20260626T130000
 DTEND:20260626T150000
 SUMMARY:⚽ Noruega vs Francia
-DESCRIPTION:Fase de Grupos - Copa Mundial FIFA 2026\nRadio: 91.5 FM Teletica Radio\nTV: Canal 7 / TDMAX → FOX+
+DESCRIPTION:Fase de Grupos - Copa Mundial FIFA 2026\nRadio: 91.5 FM Teletica\nTV: Canal 7\nAPP: TDMAX → FOX+
 CATEGORIES:Fase de Grupos
 END:VEVENT
 
@@ -498,7 +498,7 @@ BEGIN:VEVENT
 DTSTART:20260626T130000
 DTEND:20260626T150000
 SUMMARY:⚽ Senegal vs Irak
-DESCRIPTION:Fase de Grupos - Copa Mundial FIFA 2026\nRadio: 91.5 FM Teletica Radio\nTV: TDMAX → FOX+
+DESCRIPTION:Fase de Grupos - Copa Mundial FIFA 2026\nRadio: 91.5 FM Teletica\nTV: -\nAPP: TDMAX → FOX+
 CATEGORIES:Fase de Grupos
 END:VEVENT
 
@@ -506,7 +506,7 @@ BEGIN:VEVENT
 DTSTART:20260626T180000
 DTEND:20260626T200000
 SUMMARY:⚽ Cabo Verde vs Arabia Saudí
-DESCRIPTION:Fase de Grupos - Copa Mundial FIFA 2026\nRadio: 91.5 FM Teletica Radio\nTV: TDMAX → FOX+
+DESCRIPTION:Fase de Grupos - Copa Mundial FIFA 2026\nRadio: 91.5 FM Teletica\nTV: -\nAPP: TDMAX → FOX+
 CATEGORIES:Fase de Grupos
 END:VEVENT
 
@@ -514,7 +514,7 @@ BEGIN:VEVENT
 DTSTART:20260626T180000
 DTEND:20260626T200000
 SUMMARY:⚽ Uruguay vs España
-DESCRIPTION:Fase de Grupos - Copa Mundial FIFA 2026\nRadio: 91.5 FM Teletica Radio\nTV: Canal 7 / TDMAX → FOX+
+DESCRIPTION:Fase de Grupos - Copa Mundial FIFA 2026\nRadio: 91.5 FM Teletica\nTV: Canal 7\nAPP: TDMAX → FOX+
 CATEGORIES:Fase de Grupos
 END:VEVENT
 
@@ -522,7 +522,7 @@ BEGIN:VEVENT
 DTSTART:20260626T210000
 DTEND:20260626T230000
 SUMMARY:⚽ Egipto vs Irán
-DESCRIPTION:Fase de Grupos - Copa Mundial FIFA 2026\nRadio: 91.5 FM Teletica Radio\nTV: TDMAX → FOX+
+DESCRIPTION:Fase de Grupos - Copa Mundial FIFA 2026\nRadio: 91.5 FM Teletica\nTV: -\nAPP: TDMAX → FOX+
 CATEGORIES:Fase de Grupos
 END:VEVENT
 
@@ -530,7 +530,7 @@ BEGIN:VEVENT
 DTSTART:20260626T210000
 DTEND:20260626T230000
 SUMMARY:⚽ Nueva Zelanda vs Bélgica
-DESCRIPTION:Fase de Grupos - Copa Mundial FIFA 2026\nRadio: 91.5 FM Teletica Radio\nTV: TDMAX → FOX+
+DESCRIPTION:Fase de Grupos - Copa Mundial FIFA 2026\nRadio: 91.5 FM Teletica\nTV: -\nAPP: TDMAX → FOX+
 CATEGORIES:Fase de Grupos
 END:VEVENT
 
@@ -538,7 +538,7 @@ BEGIN:VEVENT
 DTSTART:20260627T150000
 DTEND:20260627T170000
 SUMMARY:⚽ Panamá vs Inglaterra
-DESCRIPTION:Fase de Grupos - Copa Mundial FIFA 2026\nRadio: 91.5 FM Teletica Radio\nTV: Canal 7 / TDMAX → FOX+
+DESCRIPTION:Fase de Grupos - Copa Mundial FIFA 2026\nRadio: 91.5 FM Teletica\nTV: Canal 7\nAPP: TDMAX → FOX+
 CATEGORIES:Fase de Grupos
 END:VEVENT
 
@@ -546,7 +546,7 @@ BEGIN:VEVENT
 DTSTART:20260627T150000
 DTEND:20260627T170000
 SUMMARY:⚽ Croacia vs Ghana
-DESCRIPTION:Fase de Grupos - Copa Mundial FIFA 2026\nRadio: 91.5 FM Teletica Radio\nTV: TDMAX → FOX+
+DESCRIPTION:Fase de Grupos - Copa Mundial FIFA 2026\nRadio: 91.5 FM Teletica\nTV: -\nAPP: TDMAX → FOX+
 CATEGORIES:Fase de Grupos
 END:VEVENT
 
@@ -554,7 +554,7 @@ BEGIN:VEVENT
 DTSTART:20260627T173000
 DTEND:20260627T193000
 SUMMARY:⚽ Colombia vs Portugal
-DESCRIPTION:Fase de Grupos - Copa Mundial FIFA 2026\nRadio: 91.5 FM Teletica Radio\nTV: Canal 7 / TDMAX → FOX+
+DESCRIPTION:Fase de Grupos - Copa Mundial FIFA 2026\nRadio: 91.5 FM Teletica\nTV: Canal 7\nAPP: TDMAX → FOX+
 CATEGORIES:Fase de Grupos
 END:VEVENT
 
@@ -562,7 +562,7 @@ BEGIN:VEVENT
 DTSTART:20260627T173000
 DTEND:20260627T193000
 SUMMARY:⚽ RD. Congo vs Uzbekistán
-DESCRIPTION:Fase de Grupos - Copa Mundial FIFA 2026\nRadio: 91.5 FM Teletica Radio\nTV: TDMAX → FOX+
+DESCRIPTION:Fase de Grupos - Copa Mundial FIFA 2026\nRadio: 91.5 FM Teletica\nTV: -\nAPP: TDMAX → FOX+
 CATEGORIES:Fase de Grupos
 END:VEVENT
 
@@ -570,7 +570,7 @@ BEGIN:VEVENT
 DTSTART:20260627T200000
 DTEND:20260627T220000
 SUMMARY:⚽ Argelia vs Austria
-DESCRIPTION:Fase de Grupos - Copa Mundial FIFA 2026\nRadio: 91.5 FM Teletica Radio\nTV: TDMAX → FOX+
+DESCRIPTION:Fase de Grupos - Copa Mundial FIFA 2026\nRadio: 91.5 FM Teletica\nTV: -\nAPP: TDMAX → FOX+
 CATEGORIES:Fase de Grupos
 END:VEVENT
 
@@ -578,7 +578,7 @@ BEGIN:VEVENT
 DTSTART:20260627T200000
 DTEND:20260627T220000
 SUMMARY:⚽ Jordania vs Argentina
-DESCRIPTION:Fase de Grupos - Copa Mundial FIFA 2026\nRadio: 91.5 FM Teletica Radio\nTV: TDMAX → FOX+
+DESCRIPTION:Fase de Grupos - Copa Mundial FIFA 2026\nRadio: 91.5 FM Teletica\nTV: -\nAPP: TDMAX → FOX+
 CATEGORIES:Fase de Grupos
 END:VEVENT
 
@@ -586,7 +586,7 @@ BEGIN:VEVENT
 DTSTART:20260628T130000
 DTEND:20260628T150000
 SUMMARY:⚽ 2A vs 2B (Dieciseisavos)
-DESCRIPTION:Dieciseisavos de Final - Copa Mundial FIFA 2026\nRadio: 91.5 FM Teletica Radio\nTV: TDMAX → FOX+
+DESCRIPTION:Dieciseisavos de Final - Copa Mundial FIFA 2026\nRadio: 91.5 FM Teletica\nTV: -\nAPP: TDMAX → FOX+
 CATEGORIES:Dieciseisavos de Final
 END:VEVENT
 
@@ -594,7 +594,7 @@ BEGIN:VEVENT
 DTSTART:20260629T110000
 DTEND:20260629T130000
 SUMMARY:⚽ 1C vs 2F (Dieciseisavos)
-DESCRIPTION:Dieciseisavos de Final - Copa Mundial FIFA 2026\nRadio: 91.5 FM Teletica Radio\nTV: Canal 7 / TDMAX → FOX+
+DESCRIPTION:Dieciseisavos de Final - Copa Mundial FIFA 2026\nRadio: 91.5 FM Teletica\nTV: Canal 7\nAPP: TDMAX → FOX+
 CATEGORIES:Dieciseisavos de Final
 END:VEVENT
 
@@ -602,7 +602,7 @@ BEGIN:VEVENT
 DTSTART:20260629T143000
 DTEND:20260629T163000
 SUMMARY:⚽ 1E vs 3ABCDF (Dieciseisavos)
-DESCRIPTION:Dieciseisavos de Final - Copa Mundial FIFA 2026\nRadio: 91.5 FM Teletica Radio\nTV: TDMAX → FOX+
+DESCRIPTION:Dieciseisavos de Final - Copa Mundial FIFA 2026\nRadio: 91.5 FM Teletica\nTV: -\nAPP: TDMAX → FOX+
 CATEGORIES:Dieciseisavos de Final
 END:VEVENT
 
@@ -610,7 +610,7 @@ BEGIN:VEVENT
 DTSTART:20260629T190000
 DTEND:20260629T210000
 SUMMARY:⚽ 1F vs 2C (Dieciseisavos)
-DESCRIPTION:Dieciseisavos de Final - Copa Mundial FIFA 2026\nRadio: 91.5 FM Teletica Radio\nTV: TDMAX → FOX+
+DESCRIPTION:Dieciseisavos de Final - Copa Mundial FIFA 2026\nRadio: 91.5 FM Teletica\nTV: -\nAPP: TDMAX → FOX+
 CATEGORIES:Dieciseisavos de Final
 END:VEVENT
 
@@ -618,7 +618,7 @@ BEGIN:VEVENT
 DTSTART:20260630T110000
 DTEND:20260630T130000
 SUMMARY:⚽ 2E vs 2I (Dieciseisavos)
-DESCRIPTION:Dieciseisavos de Final - Copa Mundial FIFA 2026\nRadio: 91.5 FM Teletica Radio\nTV: TDMAX → FOX+
+DESCRIPTION:Dieciseisavos de Final - Copa Mundial FIFA 2026\nRadio: 91.5 FM Teletica\nTV: -\nAPP: TDMAX → FOX+
 CATEGORIES:Dieciseisavos de Final
 END:VEVENT
 
@@ -626,7 +626,7 @@ BEGIN:VEVENT
 DTSTART:20260630T150000
 DTEND:20260630T170000
 SUMMARY:⚽ 1I vs 3CDFGH (Dieciseisavos)
-DESCRIPTION:Dieciseisavos de Final - Copa Mundial FIFA 2026\nRadio: 91.5 FM Teletica Radio\nTV: Canal 7 / TDMAX → FOX+
+DESCRIPTION:Dieciseisavos de Final - Copa Mundial FIFA 2026\nRadio: 91.5 FM Teletica\nTV: Canal 7\nAPP: TDMAX → FOX+
 CATEGORIES:Dieciseisavos de Final
 END:VEVENT
 
@@ -634,7 +634,7 @@ BEGIN:VEVENT
 DTSTART:20260630T190000
 DTEND:20260630T210000
 SUMMARY:⚽ 1A vs 3CEFHI (Dieciseisavos)
-DESCRIPTION:Dieciseisavos de Final - Copa Mundial FIFA 2026\nRadio: 91.5 FM Teletica Radio\nTV: TDMAX → FOX+
+DESCRIPTION:Dieciseisavos de Final - Copa Mundial FIFA 2026\nRadio: 91.5 FM Teletica\nTV: -\nAPP: TDMAX → FOX+
 CATEGORIES:Dieciseisavos de Final
 END:VEVENT
 
@@ -642,7 +642,7 @@ BEGIN:VEVENT
 DTSTART:20260701T100000
 DTEND:20260701T120000
 SUMMARY:⚽ 1L vs 3EHIJK (Dieciseisavos)
-DESCRIPTION:Dieciseisavos de Final - Copa Mundial FIFA 2026\nRadio: 91.5 FM Teletica Radio\nTV: Canal 7 / TDMAX → FOX+
+DESCRIPTION:Dieciseisavos de Final - Copa Mundial FIFA 2026\nRadio: 91.5 FM Teletica\nTV: Canal 7\nAPP: TDMAX → FOX+
 CATEGORIES:Dieciseisavos de Final
 END:VEVENT
 
@@ -650,7 +650,7 @@ BEGIN:VEVENT
 DTSTART:20260701T140000
 DTEND:20260701T160000
 SUMMARY:⚽ 1G vs 3AEHIJ (Dieciseisavos)
-DESCRIPTION:Dieciseisavos de Final - Copa Mundial FIFA 2026\nRadio: 91.5 FM Teletica Radio\nTV: TDMAX → FOX+
+DESCRIPTION:Dieciseisavos de Final - Copa Mundial FIFA 2026\nRadio: 91.5 FM Teletica\nTV: -\nAPP: TDMAX → FOX+
 CATEGORIES:Dieciseisavos de Final
 END:VEVENT
 
@@ -658,7 +658,7 @@ BEGIN:VEVENT
 DTSTART:20260701T180000
 DTEND:20260701T200000
 SUMMARY:⚽ 1D vs 3BEFIJ (Dieciseisavos)
-DESCRIPTION:Dieciseisavos de Final - Copa Mundial FIFA 2026\nRadio: 91.5 FM Teletica Radio\nTV: TDMAX → FOX+
+DESCRIPTION:Dieciseisavos de Final - Copa Mundial FIFA 2026\nRadio: 91.5 FM Teletica\nTV: -\nAPP: TDMAX → FOX+
 CATEGORIES:Dieciseisavos de Final
 END:VEVENT
 
@@ -666,7 +666,7 @@ BEGIN:VEVENT
 DTSTART:20260702T130000
 DTEND:20260702T150000
 SUMMARY:⚽ 1H vs 2J (Dieciseisavos)
-DESCRIPTION:Dieciseisavos de Final - Copa Mundial FIFA 2026\nRadio: 91.5 FM Teletica Radio\nTV: Canal 7 / TDMAX → FOX+
+DESCRIPTION:Dieciseisavos de Final - Copa Mundial FIFA 2026\nRadio: 91.5 FM Teletica\nTV: Canal 7\nAPP: TDMAX → FOX+
 CATEGORIES:Dieciseisavos de Final
 END:VEVENT
 
@@ -674,7 +674,7 @@ BEGIN:VEVENT
 DTSTART:20260702T170000
 DTEND:20260702T190000
 SUMMARY:⚽ 2K vs 2L (Dieciseisavos)
-DESCRIPTION:Dieciseisavos de Final - Copa Mundial FIFA 2026\nRadio: 91.5 FM Teletica Radio\nTV: TDMAX → FOX+
+DESCRIPTION:Dieciseisavos de Final - Copa Mundial FIFA 2026\nRadio: 91.5 FM Teletica\nTV: -\nAPP: TDMAX → FOX+
 CATEGORIES:Dieciseisavos de Final
 END:VEVENT
 
@@ -682,7 +682,7 @@ BEGIN:VEVENT
 DTSTART:20260702T210000
 DTEND:20260702T230000
 SUMMARY:⚽ 1B vs 3EFGIJ (Dieciseisavos)
-DESCRIPTION:Dieciseisavos de Final - Copa Mundial FIFA 2026\nRadio: 91.5 FM Teletica Radio\nTV: TDMAX → FOX+
+DESCRIPTION:Dieciseisavos de Final - Copa Mundial FIFA 2026\nRadio: 91.5 FM Teletica\nTV: -\nAPP: TDMAX → FOX+
 CATEGORIES:Dieciseisavos de Final
 END:VEVENT
 
@@ -690,7 +690,7 @@ BEGIN:VEVENT
 DTSTART:20260703T120000
 DTEND:20260703T140000
 SUMMARY:⚽ 2D vs 2G (Dieciseisavos)
-DESCRIPTION:Dieciseisavos de Final - Copa Mundial FIFA 2026\nRadio: 91.5 FM Teletica Radio\nTV: TDMAX → FOX+
+DESCRIPTION:Dieciseisavos de Final - Copa Mundial FIFA 2026\nRadio: 91.5 FM Teletica\nTV: -\nAPP: TDMAX → FOX+
 CATEGORIES:Dieciseisavos de Final
 END:VEVENT
 
@@ -698,7 +698,7 @@ BEGIN:VEVENT
 DTSTART:20260703T160000
 DTEND:20260703T180000
 SUMMARY:⚽ 1J vs 2H (Dieciseisavos)
-DESCRIPTION:Dieciseisavos de Final - Copa Mundial FIFA 2026\nRadio: 91.5 FM Teletica Radio\nTV: Canal 7 / TDMAX → FOX+
+DESCRIPTION:Dieciseisavos de Final - Copa Mundial FIFA 2026\nRadio: 91.5 FM Teletica\nTV: Canal 7\nAPP: TDMAX → FOX+
 CATEGORIES:Dieciseisavos de Final
 END:VEVENT
 
@@ -706,7 +706,7 @@ BEGIN:VEVENT
 DTSTART:20260703T193000
 DTEND:20260703T213000
 SUMMARY:⚽ 1K vs 3DEIJL (Dieciseisavos)
-DESCRIPTION:Dieciseisavos de Final - Copa Mundial FIFA 2026\nRadio: 91.5 FM Teletica Radio\nTV: Canal 7 / TDMAX → FOX+
+DESCRIPTION:Dieciseisavos de Final - Copa Mundial FIFA 2026\nRadio: 91.5 FM Teletica\nTV: Canal 7\nAPP: TDMAX → FOX+
 CATEGORIES:Dieciseisavos de Final
 END:VEVENT
 
@@ -714,7 +714,7 @@ BEGIN:VEVENT
 DTSTART:20260704T110000
 DTEND:20260704T130000
 SUMMARY:⚽ Octavos de Final - Partido 1
-DESCRIPTION:Octavos de Final - Copa Mundial FIFA 2026\nRadio: 91.5 FM Teletica Radio\nTV: TDMAX → FOX+
+DESCRIPTION:Octavos de Final - Copa Mundial FIFA 2026\nRadio: 91.5 FM Teletica\nTV: -\nAPP: TDMAX → FOX+
 CATEGORIES:Octavos de Final
 END:VEVENT
 
@@ -722,7 +722,7 @@ BEGIN:VEVENT
 DTSTART:20260704T150000
 DTEND:20260704T170000
 SUMMARY:⚽ Octavos de Final - Partido 2
-DESCRIPTION:Octavos de Final - Copa Mundial FIFA 2026\nRadio: 91.5 FM Teletica Radio\nTV: Canal 7 / TDMAX → FOX+
+DESCRIPTION:Octavos de Final - Copa Mundial FIFA 2026\nRadio: 91.5 FM Teletica\nTV: Canal 7\nAPP: TDMAX → FOX+
 CATEGORIES:Octavos de Final
 END:VEVENT
 
@@ -730,7 +730,7 @@ BEGIN:VEVENT
 DTSTART:20260705T140000
 DTEND:20260705T160000
 SUMMARY:⚽ Octavos de Final - Partido 3
-DESCRIPTION:Octavos de Final - Copa Mundial FIFA 2026\nRadio: 91.5 FM Teletica Radio\nTV: Canal 7 / TDMAX → FOX+
+DESCRIPTION:Octavos de Final - Copa Mundial FIFA 2026\nRadio: 91.5 FM Teletica\nTV: Canal 7\nAPP: TDMAX → FOX+
 CATEGORIES:Octavos de Final
 END:VEVENT
 
@@ -738,7 +738,7 @@ BEGIN:VEVENT
 DTSTART:20260705T180000
 DTEND:20260705T200000
 SUMMARY:⚽ Octavos de Final - Partido 4
-DESCRIPTION:Octavos de Final - Copa Mundial FIFA 2026\nRadio: 91.5 FM Teletica Radio\nTV: TDMAX → FOX+
+DESCRIPTION:Octavos de Final - Copa Mundial FIFA 2026\nRadio: 91.5 FM Teletica\nTV: -\nAPP: TDMAX → FOX+
 CATEGORIES:Octavos de Final
 END:VEVENT
 
@@ -746,7 +746,7 @@ BEGIN:VEVENT
 DTSTART:20260706T130000
 DTEND:20260706T150000
 SUMMARY:⚽ Octavos de Final - Partido 5
-DESCRIPTION:Octavos de Final - Copa Mundial FIFA 2026\nRadio: 91.5 FM Teletica Radio\nTV: Canal 7 / TDMAX → FOX+
+DESCRIPTION:Octavos de Final - Copa Mundial FIFA 2026\nRadio: 91.5 FM Teletica\nTV: Canal 7\nAPP: TDMAX → FOX+
 CATEGORIES:Octavos de Final
 END:VEVENT
 
@@ -754,7 +754,7 @@ BEGIN:VEVENT
 DTSTART:20260706T180000
 DTEND:20260706T200000
 SUMMARY:⚽ Octavos de Final - Partido 6
-DESCRIPTION:Octavos de Final - Copa Mundial FIFA 2026\nRadio: 91.5 FM Teletica Radio\nTV: TDMAX → FOX+
+DESCRIPTION:Octavos de Final - Copa Mundial FIFA 2026\nRadio: 91.5 FM Teletica\nTV: -\nAPP: TDMAX → FOX+
 CATEGORIES:Octavos de Final
 END:VEVENT
 
@@ -762,7 +762,7 @@ BEGIN:VEVENT
 DTSTART:20260707T100000
 DTEND:20260707T120000
 SUMMARY:⚽ Octavos de Final - Partido 7
-DESCRIPTION:Octavos de Final - Copa Mundial FIFA 2026\nRadio: 91.5 FM Teletica Radio\nTV: Canal 7 / TDMAX → FOX+
+DESCRIPTION:Octavos de Final - Copa Mundial FIFA 2026\nRadio: 91.5 FM Teletica\nTV: Canal 7\nAPP: TDMAX → FOX+
 CATEGORIES:Octavos de Final
 END:VEVENT
 
@@ -770,7 +770,7 @@ BEGIN:VEVENT
 DTSTART:20260707T140000
 DTEND:20260707T160000
 SUMMARY:⚽ Octavos de Final - Partido 8
-DESCRIPTION:Octavos de Final - Copa Mundial FIFA 2026\nRadio: 91.5 FM Teletica Radio\nTV: TDMAX → FOX+
+DESCRIPTION:Octavos de Final - Copa Mundial FIFA 2026\nRadio: 91.5 FM Teletica\nTV: -\nAPP: TDMAX → FOX+
 CATEGORIES:Octavos de Final
 END:VEVENT
 
@@ -778,7 +778,7 @@ BEGIN:VEVENT
 DTSTART:20260709T140000
 DTEND:20260709T160000
 SUMMARY:⚽ Cuartos de Final - Partido 1
-DESCRIPTION:Cuartos de Final - Copa Mundial FIFA 2026\nRadio: 91.5 FM Teletica Radio\nTV: TDMAX → FOX+
+DESCRIPTION:Cuartos de Final - Copa Mundial FIFA 2026\nRadio: 91.5 FM Teletica\nTV: -\nAPP: TDMAX → FOX+
 CATEGORIES:Cuartos de Final
 END:VEVENT
 
@@ -786,7 +786,7 @@ BEGIN:VEVENT
 DTSTART:20260710T130000
 DTEND:20260710T150000
 SUMMARY:⚽ Cuartos de Final - Partido 2
-DESCRIPTION:Cuartos de Final - Copa Mundial FIFA 2026\nRadio: 91.5 FM Teletica Radio\nTV: TDMAX → FOX+
+DESCRIPTION:Cuartos de Final - Copa Mundial FIFA 2026\nRadio: 91.5 FM Teletica\nTV: -\nAPP: TDMAX → FOX+
 CATEGORIES:Cuartos de Final
 END:VEVENT
 
@@ -794,7 +794,7 @@ BEGIN:VEVENT
 DTSTART:20260711T150000
 DTEND:20260711T170000
 SUMMARY:⚽ Cuartos de Final - Partido 3
-DESCRIPTION:Cuartos de Final - Copa Mundial FIFA 2026\nRadio: 91.5 FM Teletica Radio\nTV: Canal 7 / TDMAX → FOX+
+DESCRIPTION:Cuartos de Final - Copa Mundial FIFA 2026\nRadio: 91.5 FM Teletica\nTV: Canal 7\nAPP: TDMAX → FOX+
 CATEGORIES:Cuartos de Final
 END:VEVENT
 
@@ -802,7 +802,7 @@ BEGIN:VEVENT
 DTSTART:20260711T190000
 DTEND:20260711T210000
 SUMMARY:⚽ Cuartos de Final - Partido 4
-DESCRIPTION:Cuartos de Final - Copa Mundial FIFA 2026\nRadio: 91.5 FM Teletica Radio\nTV: Canal 7 / TDMAX → FOX+
+DESCRIPTION:Cuartos de Final - Copa Mundial FIFA 2026\nRadio: 91.5 FM Teletica\nTV: Canal 7\nAPP: TDMAX → FOX+
 CATEGORIES:Cuartos de Final
 END:VEVENT
 
@@ -810,7 +810,7 @@ BEGIN:VEVENT
 DTSTART:20260714T130000
 DTEND:20260714T150000
 SUMMARY:⚽ Semifinal 1
-DESCRIPTION:Semifinal - Copa Mundial FIFA 2026\nRadio: 91.5 FM Teletica Radio\nTV: Canal 7 / TDMAX → FOX+
+DESCRIPTION:Semifinal - Copa Mundial FIFA 2026\nRadio: 91.5 FM Teletica\nTV: Canal 7\nAPP: TDMAX → FOX+
 CATEGORIES:Semifinal
 END:VEVENT
 
@@ -818,7 +818,7 @@ BEGIN:VEVENT
 DTSTART:20260715T130000
 DTEND:20260715T150000
 SUMMARY:⚽ Semifinal 2
-DESCRIPTION:Semifinal - Copa Mundial FIFA 2026\nRadio: 91.5 FM Teletica Radio\nTV: Canal 7 / TDMAX → FOX+
+DESCRIPTION:Semifinal - Copa Mundial FIFA 2026\nRadio: 91.5 FM Teletica\nTV: Canal 7\nAPP: TDMAX → FOX+
 CATEGORIES:Semifinal
 END:VEVENT
 
@@ -826,7 +826,7 @@ BEGIN:VEVENT
 DTSTART:20260718T150000
 DTEND:20260718T170000
 SUMMARY:🥉 Tercer Lugar - Copa Mundial FIFA 2026
-DESCRIPTION:Tercer Lugar - Copa Mundial FIFA 2026\nRadio: 91.5 FM Teletica Radio\nTV: TDMAX → FOX+
+DESCRIPTION:Tercer Lugar - Copa Mundial FIFA 2026\nRadio: 91.5 FM Teletica\nTV: -\nAPP: TDMAX → FOX+
 CATEGORIES:Tercer Lugar
 END:VEVENT
 
@@ -834,7 +834,7 @@ BEGIN:VEVENT
 DTSTART:20260719T130000
 DTEND:20260719T150000
 SUMMARY:🏆 Gran Final - Copa Mundial FIFA 2026
-DESCRIPTION:Gran Final - Copa Mundial FIFA 2026\nRadio: 91.5 FM Teletica Radio\nTV: Canal 7 / TDMAX → FOX+
+DESCRIPTION:Gran Final - Copa Mundial FIFA 2026\nRadio: 91.5 FM Teletica\nTV: Canal 7\nAPP: TDMAX → FOX+
 CATEGORIES:Final
 END:VEVENT
 
