@@ -187,7 +187,6 @@
     function unlock() {
       document.getElementById('auth-overlay').style.display = 'none';
       document.getElementById('main-content').style.display = '';
-      initDashboard();
     }
     if (sessionStorage.getItem(KEY) === '1') { unlock(); return; }
     const input = document.getElementById('auth-input');
@@ -195,7 +194,7 @@
     const err   = document.getElementById('auth-error');
     async function attempt() {
       const hash = await sha256(input.value);
-      if (hash === HASH) { sessionStorage.setItem(KEY, '1'); unlock(); }
+      if (hash === HASH) { sessionStorage.setItem(KEY, '1'); unlock(); initDashboard(); }
       else { err.textContent = 'Contraseña incorrecta'; input.value = ''; input.focus(); }
     }
     btn.addEventListener('click', attempt);
@@ -382,6 +381,11 @@ function initDashboard() {
   });
 
   fetchReport(start, end);
+}
+
+// Si ya está autenticado (recarga de página), inicia el dashboard ahora
+if (sessionStorage.getItem('tdmax_reportes_auth') === '1') {
+  initDashboard();
 }
 </script>
 </body>
