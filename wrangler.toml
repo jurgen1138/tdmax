@@ -1,0 +1,8 @@
+name = "tdmax"
+main = "worker.js"
+compatibility_date = "2026-06-05"
+compatibility_flags = ["nodejs_compat"]
+
+[assets]
+directory = "./"
+binding = "ASSETS"

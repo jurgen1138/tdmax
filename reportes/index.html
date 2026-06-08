@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Reporte de Audiencia GA4 — Mayo 2026</title>
+  <title>Reporte de Audiencia GA4</title>
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
     body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #f5f5f3; color: #1a1a18; padding: 1.25rem; }
@@ -11,7 +11,13 @@
     .header { display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 10px; margin-bottom: 1.5rem; }
     .header-title { font-size: 20px; font-weight: 500; color: #1a1a18; }
     .header-sub { font-size: 12px; color: #888780; margin-top: 3px; }
-    .badge { background: #e8e8e4; border-radius: 8px; padding: 6px 12px; font-size: 12px; color: #5f5e5a; white-space: nowrap; }
+    .date-controls { display: flex; align-items: center; gap: 6px; flex-wrap: wrap; }
+    .date-input { background: #e8e8e4; border: none; border-radius: 8px; padding: 6px 10px; font-size: 12px; color: #1a1a18; outline: none; cursor: pointer; }
+    .date-input:focus { box-shadow: 0 0 0 2px #378ADD44; }
+    .date-sep { font-size: 12px; color: #888780; }
+    .apply-btn { background: #1a1a18; color: #fff; border: none; border-radius: 8px; padding: 6px 14px; font-size: 12px; cursor: pointer; }
+    .apply-btn:hover { background: #333; }
+    .apply-btn:disabled { background: #888780; cursor: not-allowed; }
     .section-title { font-size: 11px; font-weight: 500; color: #888780; text-transform: uppercase; letter-spacing: 0.07em; margin: 1.5rem 0 0.75rem; }
     .metric-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); gap: 8px; }
     .metric-card { background: #ebebea; border-radius: 8px; padding: 0.8rem 0.9rem; }
@@ -27,21 +33,31 @@
     .top-table tr:last-child td { border-bottom: none; }
     .geo-row { display: flex; align-items: center; gap: 6px; padding: 5px 0; border-bottom: 0.5px solid rgba(0,0,0,0.07); font-size: 12px; }
     .geo-row:last-child { border-bottom: none; }
-    .geo-name { width: 110px; color: #1a1a18; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; flex-shrink: 0; }
+    .geo-name { width: 130px; color: #1a1a18; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; flex-shrink: 0; }
     .geo-bar-bg { flex: 1; background: #ebebea; border-radius: 3px; height: 5px; min-width: 20px; }
-    .geo-bar { height: 5px; background: #378ADD; border-radius: 3px; }
-    .geo-val { width: 46px; text-align: right; color: #888780; font-size: 11px; flex-shrink: 0; }
+    .geo-bar { height: 5px; background: #378ADD; border-radius: 3px; transition: width 0.4s ease; }
+    .geo-val { width: 52px; text-align: right; color: #888780; font-size: 11px; flex-shrink: 0; }
     .legend-row { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 10px; font-size: 11px; color: #888780; }
     .ldot { width: 9px; height: 9px; border-radius: 2px; display: inline-block; margin-right: 3px; vertical-align: middle; flex-shrink: 0; }
     .activity-grid { display: flex; gap: 1.5rem; flex-wrap: wrap; }
     .activity-item .alabel { font-size: 11px; color: #888780; }
     .activity-item .avalue { font-size: 18px; font-weight: 500; color: #1a1a18; }
     .footnote { font-size: 11px; color: #b4b2a9; margin-top: 8px; }
+    .notice { font-size: 11px; color: #888780; background: #f5f5f3; border-radius: 6px; padding: 8px 10px; margin-top: 8px; }
     .footer { margin-top: 2rem; padding-top: 1rem; border-top: 0.5px solid rgba(0,0,0,0.1); font-size: 11px; color: #b4b2a9; text-align: center; }
     .canvas-wrap { position: relative; width: 100%; }
+    /* Loading */
+    .skeleton { background: linear-gradient(90deg, #ebebea 25%, #e0e0de 50%, #ebebea 75%); background-size: 200% 100%; animation: shimmer 1.4s infinite; border-radius: 8px; }
+    @keyframes shimmer { 0% { background-position: 200% 0; } 100% { background-position: -200% 0; } }
+    .sk-metric { height: 72px; }
+    .sk-chart { height: 220px; margin-bottom: 1rem; border-radius: 12px; }
+    .sk-row { height: 14px; margin-bottom: 8px; border-radius: 4px; }
+    #loading-state { display: none; }
+    #error-state { display: none; background: #fff0ee; border: 0.5px solid #D85A30; border-radius: 12px; padding: 1rem; margin-bottom: 1rem; font-size: 13px; color: #D85A30; }
     @media (max-width: 580px) {
       .two-col { grid-template-columns: 1fr; }
       body { padding: 0.85rem; }
+      .date-controls { width: 100%; }
     }
   </style>
   <style>
@@ -57,6 +73,8 @@
   </style>
 </head>
 <body>
+
+<!-- Auth wall -->
 <div id="auth-overlay">
   <div id="auth-box">
     <h2>Acceso restringido</h2>
@@ -66,203 +84,305 @@
     <div id="auth-error"></div>
   </div>
 </div>
+
+<!-- Dashboard -->
 <div class="container" id="main-content" style="display:none;">
- 
+
   <div class="header">
     <div>
       <div class="header-title">Reporte de audiencia</div>
       <div class="header-sub">Google Analytics 4 — uso interno</div>
     </div>
-    <div class="badge">📅 1 mayo – 3 junio 2026</div>
-  </div>
- 
-  <div class="section-title">Métricas generales</div>
-  <div class="metric-grid">
-    <div class="metric-card"><div class="metric-label">Usuarios activos</div><div class="metric-value">55,222</div><div class="metric-sub">período completo</div></div>
-    <div class="metric-card"><div class="metric-label">Nuevos usuarios</div><div class="metric-value">49,292</div><div class="metric-sub">primer acceso</div></div>
-    <div class="metric-card"><div class="metric-label">Sesiones</div><div class="metric-value">119K</div><div class="metric-sub">session_start</div></div>
-    <div class="metric-card"><div class="metric-label">Páginas vistas</div><div class="metric-value">350K</div><div class="metric-sub">total views</div></div>
-    <div class="metric-card"><div class="metric-label">Págs por sesión</div><div class="metric-value">2.94</div><div class="metric-sub">350K / 119K</div></div>
-    <div class="metric-card"><div class="metric-label">Duración promedio</div><div class="metric-value">4m 03s</div><div class="metric-sub">por usuario activo</div></div>
-    <div class="metric-card"><div class="metric-label">Sesiones engaged</div><div class="metric-value">1.19</div><div class="metric-sub">por usuario activo</div></div>
-  </div>
- 
-  <div class="section-title">Canales de adquisición (sesiones)</div>
-  <div class="chart-wrap">
-    <div class="legend-row" id="ch-legend"></div>
-    <div class="canvas-wrap" id="channelWrap">
-      <canvas id="channelChart"></canvas>
+    <div class="date-controls">
+      <input type="date" id="date-start" class="date-input" />
+      <span class="date-sep">—</span>
+      <input type="date" id="date-end" class="date-input" />
+      <button id="apply-btn" class="apply-btn">Aplicar</button>
     </div>
   </div>
- 
-  <div class="two-col">
+
+  <div id="error-state"></div>
+
+  <!-- Loading skeletons -->
+  <div id="loading-state">
+    <div class="section-title">Métricas generales</div>
+    <div class="metric-grid">
+      <div class="skeleton sk-metric"></div>
+      <div class="skeleton sk-metric"></div>
+      <div class="skeleton sk-metric"></div>
+      <div class="skeleton sk-metric"></div>
+      <div class="skeleton sk-metric"></div>
+      <div class="skeleton sk-metric"></div>
+      <div class="skeleton sk-metric"></div>
+    </div>
+    <div style="margin-top:1.5rem;" class="skeleton sk-chart"></div>
+    <div class="two-col" style="margin-top:1rem;">
+      <div class="skeleton sk-chart"></div>
+      <div class="skeleton sk-chart"></div>
+    </div>
+  </div>
+
+  <!-- Report content -->
+  <div id="report-content" style="display:none;">
+    <div class="section-title">Métricas generales</div>
+    <div class="metric-grid">
+      <div class="metric-card"><div class="metric-label">Usuarios activos</div><div class="metric-value" id="m-activeUsers">—</div><div class="metric-sub">período completo</div></div>
+      <div class="metric-card"><div class="metric-label">Nuevos usuarios</div><div class="metric-value" id="m-newUsers">—</div><div class="metric-sub">primer acceso</div></div>
+      <div class="metric-card"><div class="metric-label">Sesiones</div><div class="metric-value" id="m-sessions">—</div><div class="metric-sub">session_start</div></div>
+      <div class="metric-card"><div class="metric-label">Páginas vistas</div><div class="metric-value" id="m-pageViews">—</div><div class="metric-sub">total views</div></div>
+      <div class="metric-card"><div class="metric-label">Págs por sesión</div><div class="metric-value" id="m-pagesPerSession">—</div><div class="metric-sub" id="m-pagesPerSession-sub"></div></div>
+      <div class="metric-card"><div class="metric-label">Duración promedio</div><div class="metric-value" id="m-avgDuration">—</div><div class="metric-sub">por usuario activo</div></div>
+      <div class="metric-card"><div class="metric-label">Engagement rate</div><div class="metric-value" id="m-engagementRate">—</div><div class="metric-sub">sesiones engaged</div></div>
+    </div>
+
+    <div class="section-title">Canales de adquisición (sesiones)</div>
     <div class="chart-wrap">
-      <div class="chart-title">Páginas más vistas</div>
-      <table class="top-table">
-        <thead><tr><th>Página</th><th style="text-align:right;">Vistas</th></tr></thead>
-        <tbody>
-          <tr><td>TDMAX | Live Sports</td><td style="text-align:right;">146K</td></tr>
-          <tr><td>TDMAX | Deportes</td><td style="text-align:right;">71K</td></tr>
-          <tr><td>Guía de programación</td><td style="text-align:right;">45K</td></tr>
-          <tr><td>Iniciar sesión</td><td style="text-align:right;">31K</td></tr>
-          <tr><td>Planes de suscripción</td><td style="text-align:right;">8.9K</td></tr>
-          <tr><td>Inicio (/)</td><td style="text-align:right;">8.3K</td></tr>
-        </tbody>
-      </table>
+      <div class="legend-row" id="ch-legend"></div>
+      <div class="canvas-wrap" id="channelWrap"><canvas id="channelChart"></canvas></div>
     </div>
+
+    <div class="two-col">
+      <div class="chart-wrap">
+        <div class="chart-title">Páginas más vistas</div>
+        <table class="top-table">
+          <thead><tr><th>Página</th><th style="text-align:right;">Vistas</th></tr></thead>
+          <tbody id="pages-tbody"></tbody>
+        </table>
+      </div>
+      <div class="chart-wrap">
+        <div class="chart-title">Usuarios activos por país</div>
+        <div id="geo-rows"></div>
+        <div class="footnote" id="geo-footnote"></div>
+      </div>
+    </div>
+
+    <div class="section-title">Actividad de usuarios <span style="font-weight:400;text-transform:none;letter-spacing:0;">(siempre relativo a hoy)</span></div>
     <div class="chart-wrap">
-      <div class="chart-title">Usuarios activos por país</div>
-      <div class="geo-row"><span class="geo-name">🇨🇷 Costa Rica</span><div class="geo-bar-bg"><div class="geo-bar" style="width:85.61%"></div></div><span class="geo-val">47,274</span></div>
-      <div class="geo-row"><span class="geo-name">🇺🇸 Estados Unidos</span><div class="geo-bar-bg"><div class="geo-bar" style="width:7.69%"></div></div><span class="geo-val">4,246</span></div>
-      <div class="geo-row"><span class="geo-name">🇲🇽 México</span><div class="geo-bar-bg"><div class="geo-bar" style="width:1.59%"></div></div><span class="geo-val">879</span></div>
-      <div class="geo-row"><span class="geo-name">🇪🇸 España</span><div class="geo-bar-bg"><div class="geo-bar" style="width:0.55%"></div></div><span class="geo-val">305</span></div>
-      <div class="geo-row"><span class="geo-name">🇵🇦 Panamá</span><div class="geo-bar-bg"><div class="geo-bar" style="width:0.45%"></div></div><span class="geo-val">249</span></div>
-      <div class="geo-row"><span class="geo-name">🇨🇴 Colombia</span><div class="geo-bar-bg"><div class="geo-bar" style="width:0.42%"></div></div><span class="geo-val">231</span></div>
-      <div class="geo-row"><span class="geo-name">🇨🇦 Canadá</span><div class="geo-bar-bg"><div class="geo-bar" style="width:0.39%"></div></div><span class="geo-val">215</span></div>
-      <div class="geo-row"><span class="geo-name">🇬🇹 Guatemala</span><div class="geo-bar-bg"><div class="geo-bar" style="width:0.34%"></div></div><span class="geo-val">189</span></div>
-      <div class="geo-row"><span class="geo-name">🇳🇮 Nicaragua</span><div class="geo-bar-bg"><div class="geo-bar" style="width:0.31%"></div></div><span class="geo-val">170</span></div>
-      <div class="geo-row"><span class="geo-name">🇮🇩 Indonesia</span><div class="geo-bar-bg"><div class="geo-bar" style="width:0.29%"></div></div><span class="geo-val">159</span></div>
-      <div class="footnote">Total: 55,222 usuarios — 124 países</div>
+      <div class="activity-grid">
+        <div class="activity-item"><div class="alabel">Usuarios activos 30 días</div><div class="avalue" id="a-mau">—</div></div>
+        <div class="activity-item"><div class="alabel">Usuarios activos 7 días</div><div class="avalue" id="a-wau">—</div></div>
+        <div class="activity-item"><div class="alabel">Usuarios activos 1 día</div><div class="avalue" id="a-dau">—</div></div>
+        <div class="activity-item"><div class="alabel">Stickiness DAU/MAU</div><div class="avalue" id="a-stickiness">—</div></div>
+        <div class="activity-item"><div class="alabel">Engagement rate</div><div class="avalue" id="a-er">—</div></div>
+      </div>
     </div>
+
+    <div class="section-title">Eventos GTM — cta_click</div>
+    <div class="chart-wrap" id="cta-wrap"></div>
+
+    <div class="footer" id="footer-text"></div>
   </div>
- 
-  <div class="section-title">Actividad de usuarios</div>
-  <div class="chart-wrap">
-    <div class="activity-grid">
-      <div class="activity-item"><div class="alabel">Usuarios activos 30 días</div><div class="avalue">52K</div></div>
-      <div class="activity-item"><div class="alabel">Usuarios activos 7 días</div><div class="avalue">27K</div></div>
-      <div class="activity-item"><div class="alabel">Usuarios activos 1 día</div><div class="avalue">4.5K</div></div>
-      <div class="activity-item"><div class="alabel">Stickiness DAU/MAU</div><div class="avalue">8.6%</div></div>
-      <div class="activity-item"><div class="alabel">Engagement rate</div><div class="avalue">57.28%</div></div>
-    </div>
-  </div>
- 
-  <div class="section-title">Top búsquedas orgánicas (Search Console)</div>
-  <div class="chart-wrap">
-    <div class="canvas-wrap" id="searchWrap">
-      <canvas id="searchChart"></canvas>
-    </div>
-  </div>
- 
-  <div class="footer">Generado el 4 de junio 2026 · Google Analytics 4 · Uso interno del equipo</div>
+
 </div>
 
+<!-- Auth script -->
 <script>
   (function () {
     const HASH = '752a8aa3af1aecd0d9e548623687f278d115c4188f00e87e193b085c0dbf8bc4';
-    const SESSION_KEY = 'tdmax_reportes_auth';
-
-    async function sha256(str) {
-      const buf = await crypto.subtle.digest('SHA-256', new TextEncoder().encode(str));
-      return Array.from(new Uint8Array(buf)).map(b => b.toString(16).padStart(2, '0')).join('');
+    const KEY  = 'tdmax_reportes_auth';
+    async function sha256(s) {
+      const buf = await crypto.subtle.digest('SHA-256', new TextEncoder().encode(s));
+      return Array.from(new Uint8Array(buf)).map(b => b.toString(16).padStart(2,'0')).join('');
     }
-
     function unlock() {
       document.getElementById('auth-overlay').style.display = 'none';
       document.getElementById('main-content').style.display = '';
+      initDashboard();
     }
-
-    if (sessionStorage.getItem(SESSION_KEY) === '1') { unlock(); return; }
-
+    if (sessionStorage.getItem(KEY) === '1') { unlock(); return; }
     const input = document.getElementById('auth-input');
-    const btn = document.getElementById('auth-btn');
-    const err = document.getElementById('auth-error');
-
+    const btn   = document.getElementById('auth-btn');
+    const err   = document.getElementById('auth-error');
     async function attempt() {
       const hash = await sha256(input.value);
-      if (hash === HASH) {
-        sessionStorage.setItem(SESSION_KEY, '1');
-        unlock();
-      } else {
-        err.textContent = 'Contraseña incorrecta';
-        input.value = '';
-        input.focus();
-      }
+      if (hash === HASH) { sessionStorage.setItem(KEY, '1'); unlock(); }
+      else { err.textContent = 'Contraseña incorrecta'; input.value = ''; input.focus(); }
     }
-
     btn.addEventListener('click', attempt);
     input.addEventListener('keydown', e => { if (e.key === 'Enter') attempt(); });
     input.focus();
   })();
 </script>
 
+<!-- Dashboard script -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js"></script>
 <script>
-  const isMobile = window.innerWidth < 580;
- 
-  const channels = [
-    { label: 'Organic Search', value: 47000, color: '#378ADD' },
-    { label: 'Direct', value: 31000, color: '#1D9E75' },
-    { label: 'Paid Social', value: 18000, color: '#D85A30' },
-    { label: 'Organic Shopping', value: 8200, color: '#EF9F27' },
-    { label: 'Referral', value: 6500, color: '#534AB7' },
-    { label: 'Organic Social', value: 1800, color: '#888780' }
-  ];
- 
+const isMobile = window.innerWidth < 580;
+let channelChartInstance = null;
+
+// ─── Date helpers ─────────────────────────────────────────────────────────────
+function pad(n) { return String(n).padStart(2, '0'); }
+function toDateStr(d) { return `${d.getFullYear()}-${pad(d.getMonth()+1)}-${pad(d.getDate())}`; }
+function monthStart() { const d = new Date(); return `${d.getFullYear()}-${pad(d.getMonth()+1)}-01`; }
+function todayStr()   { return toDateStr(new Date()); }
+
+// ─── Format ───────────────────────────────────────────────────────────────────
+function fmtK(n) {
+  if (n >= 1_000_000) return (n/1_000_000).toFixed(1)+'M';
+  if (n >= 10_000)    return Math.round(n/1_000)+'K';
+  if (n >= 1_000)     return (n/1_000).toFixed(1)+'K';
+  return n.toLocaleString('es');
+}
+const FLAGS = {
+  'Costa Rica':'🇨🇷','United States':'🇺🇸','Mexico':'🇲🇽','Spain':'🇪🇸','Panama':'🇵🇦',
+  'Colombia':'🇨🇴','Canada':'🇨🇦','Guatemala':'🇬🇹','Nicaragua':'🇳🇮','Indonesia':'🇮🇩',
+  'Argentina':'🇦🇷','Chile':'🇨🇱','Peru':'🇵🇪','Venezuela':'🇻🇪','Ecuador':'🇪🇨',
+  'Honduras':'🇭🇳','El Salvador':'🇸🇻','Bolivia':'🇧🇴','Dominican Republic':'🇩🇴',
+  'United Kingdom':'🇬🇧','Germany':'🇩🇪','France':'🇫🇷','Brazil':'🇧🇷','Puerto Rico':'🇵🇷',
+};
+const NAME_ES = {
+  'United States':'Estados Unidos','Mexico':'México','Spain':'España','Panama':'Panamá',
+  'Germany':'Alemania','France':'Francia','United Kingdom':'Reino Unido',
+  'Dominican Republic':'Rep. Dominicana',
+};
+function countryLabel(c) { return `${FLAGS[c]||'🌍'} ${NAME_ES[c]||c}`; }
+
+// ─── Render ───────────────────────────────────────────────────────────────────
+function renderMetrics(ov) {
+  document.getElementById('m-activeUsers').textContent    = fmtK(ov.activeUsers);
+  document.getElementById('m-newUsers').textContent       = fmtK(ov.newUsers);
+  document.getElementById('m-sessions').textContent       = fmtK(ov.sessions);
+  document.getElementById('m-pageViews').textContent      = fmtK(ov.pageViews);
+  document.getElementById('m-pagesPerSession').textContent = ov.pagesPerSession;
+  document.getElementById('m-pagesPerSession-sub').textContent = `${fmtK(ov.pageViews)} / ${fmtK(ov.sessions)}`;
+  document.getElementById('m-avgDuration').textContent    = ov.avgDuration;
+  document.getElementById('m-engagementRate').textContent = ov.engagementRate + '%';
+}
+
+function renderChannels(channels) {
+  // Legend
   const legend = document.getElementById('ch-legend');
+  legend.innerHTML = '';
   channels.forEach(d => {
     const s = document.createElement('span');
     s.style.cssText = 'display:flex;align-items:center;gap:3px;';
-    s.innerHTML = `<span class="ldot" style="background:${d.color}"></span>${d.label} ${(d.value/1000).toFixed(1)}K`;
+    s.innerHTML = `<span class="ldot" style="background:${d.color}"></span>${d.label} ${fmtK(d.value)}`;
     legend.appendChild(s);
   });
- 
-  const chWrap = document.getElementById('channelWrap');
-  const chHeight = isMobile ? channels.length * 36 + 40 : 220;
-  chWrap.style.height = chHeight + 'px';
- 
-  new Chart(document.getElementById('channelChart'), {
+  // Chart
+  if (channelChartInstance) channelChartInstance.destroy();
+  const wrap = document.getElementById('channelWrap');
+  wrap.style.height = (isMobile ? channels.length * 36 + 40 : 220) + 'px';
+  channelChartInstance = new Chart(document.getElementById('channelChart'), {
     type: 'bar',
     data: {
       labels: channels.map(d => d.label),
-      datasets: [{ data: channels.map(d => d.value), backgroundColor: channels.map(d => d.color), borderRadius: 4 }]
+      datasets: [{ data: channels.map(d => d.value), backgroundColor: channels.map(d => d.color), borderRadius: 4 }],
     },
     options: {
-      indexAxis: 'y',
-      responsive: true,
-      maintainAspectRatio: false,
-      plugins: {
-        legend: { display: false },
-        tooltip: { callbacks: { label: ctx => ` ${(ctx.raw/1000).toFixed(1)}K sesiones` } }
-      },
+      indexAxis: 'y', responsive: true, maintainAspectRatio: false,
+      plugins: { legend: { display: false }, tooltip: { callbacks: { label: ctx => ` ${fmtK(ctx.raw)} sesiones` } } },
       scales: {
-        x: { ticks: { callback: v => (v/1000).toFixed(0)+'K', color: '#888780', font: { size: isMobile ? 10 : 12 } }, grid: { color: 'rgba(0,0,0,0.06)' } },
-        y: { ticks: { color: '#888780', font: { size: isMobile ? 10 : 12 } }, grid: { display: false } }
-      }
-    }
-  });
- 
-  const queries = ['tdmax', 'tdmas', 'tdmax en vivo', 'td max', 'tdmas en vivo', 'td+'];
-  const qValues = [12000, 1200, 911, 797, 657, 246];
- 
-  const srchWrap = document.getElementById('searchWrap');
-  srchWrap.style.height = isMobile ? '200px' : '180px';
- 
-  new Chart(document.getElementById('searchChart'), {
-    type: 'bar',
-    data: {
-      labels: queries,
-      datasets: [{ data: qValues, backgroundColor: '#378ADD', borderRadius: 4 }]
+        x: { ticks: { callback: v => fmtK(v), color: '#888780', font: { size: isMobile ? 10 : 12 } }, grid: { color: 'rgba(0,0,0,0.06)' } },
+        y: { ticks: { color: '#888780', font: { size: isMobile ? 10 : 12 } }, grid: { display: false } },
+      },
     },
-    options: {
-      responsive: true,
-      maintainAspectRatio: false,
-      plugins: {
-        legend: { display: false },
-        tooltip: { callbacks: { label: ctx => ` ${ctx.raw.toLocaleString()} impresiones` } }
-      },
-      scales: {
-        x: {
-          ticks: { autoSkip: false, color: '#888780', font: { size: isMobile ? 9 : 12 }, maxRotation: isMobile ? 45 : 0 },
-          grid: { display: false }
-        },
-        y: {
-          ticks: { color: '#888780', font: { size: isMobile ? 10 : 12 }, callback: v => v >= 1000 ? (v/1000).toFixed(0)+'K' : v },
-          grid: { color: 'rgba(0,0,0,0.06)' }
-        }
-      }
-    }
   });
+}
+
+function renderPages(pages) {
+  document.getElementById('pages-tbody').innerHTML = pages.map(p =>
+    `<tr><td>${p.title}</td><td style="text-align:right;">${fmtK(p.views)}</td></tr>`
+  ).join('');
+}
+
+function renderCountries(countries) {
+  const max = countries[0]?.users || 1;
+  document.getElementById('geo-rows').innerHTML = countries.map(c => {
+    const pct = ((c.users / max) * 100).toFixed(2);
+    return `<div class="geo-row"><span class="geo-name">${countryLabel(c.country)}</span><div class="geo-bar-bg"><div class="geo-bar" style="width:${pct}%"></div></div><span class="geo-val">${c.users.toLocaleString('es')}</span></div>`;
+  }).join('');
+  const total = countries.reduce((s, c) => s + c.users, 0);
+  document.getElementById('geo-footnote').textContent = `Total: ${total.toLocaleString('es')} usuarios`;
+}
+
+function renderActivity(act, er) {
+  document.getElementById('a-mau').textContent        = fmtK(act.mau);
+  document.getElementById('a-wau').textContent        = fmtK(act.wau);
+  document.getElementById('a-dau').textContent        = fmtK(act.dau);
+  document.getElementById('a-stickiness').textContent = act.stickiness + '%';
+  document.getElementById('a-er').textContent         = er + '%';
+}
+
+function renderCta(cta) {
+  const wrap = document.getElementById('cta-wrap');
+  if (cta.rows.length > 0) {
+    wrap.innerHTML = `
+      <div class="chart-title">Top botones / CTAs clicados <span style="font-weight:400;color:#888780;">(${cta.total.toLocaleString('es')} eventos totales)</span></div>
+      <table class="top-table">
+        <thead><tr><th>Botón / CTA</th><th style="text-align:right;">Clics</th></tr></thead>
+        <tbody>${cta.rows.map(r => `<tr><td>${r.button}</td><td style="text-align:right;">${r.count.toLocaleString('es')}</td></tr>`).join('')}</tbody>
+      </table>`;
+  } else {
+    wrap.innerHTML = `
+      <p style="font-size:13px;font-weight:500;color:#1a1a18;margin-bottom:6px;">Total eventos cta_click: <strong>${cta.total.toLocaleString('es')}</strong></p>
+      <p class="notice">Para ver el desglose por botón, registra el parámetro <code>button_text</code> como dimensión personalizada en GA4 → Admin → Definiciones personalizadas.</p>`;
+  }
+}
+
+function renderAll(data) {
+  renderMetrics(data.overview);
+  renderChannels(data.channels);
+  renderPages(data.topPages);
+  renderCountries(data.countries);
+  renderActivity(data.activity, data.overview.engagementRate);
+  renderCta(data.cta);
+  const now = new Date();
+  const MONTHS = ['enero','febrero','marzo','abril','mayo','junio','julio','agosto','septiembre','octubre','noviembre','diciembre'];
+  document.getElementById('footer-text').textContent =
+    `Actualizado el ${now.getDate()} de ${MONTHS[now.getMonth()]} ${now.getFullYear()} · Google Analytics 4 · Uso interno del equipo`;
+}
+
+// ─── Fetch & state ────────────────────────────────────────────────────────────
+async function fetchReport(start, end) {
+  const loading = document.getElementById('loading-state');
+  const content = document.getElementById('report-content');
+  const errEl   = document.getElementById('error-state');
+  const btn     = document.getElementById('apply-btn');
+
+  loading.style.display = '';
+  content.style.display = 'none';
+  errEl.style.display   = 'none';
+  btn.disabled = true;
+  btn.textContent = 'Cargando…';
+
+  try {
+    const res  = await fetch(`/api/report?start=${start}&end=${end}`);
+    const data = await res.json();
+    if (data.error) throw new Error(data.error);
+    renderAll(data);
+    loading.style.display = 'none';
+    content.style.display = '';
+  } catch (e) {
+    loading.style.display = 'none';
+    errEl.style.display   = '';
+    errEl.textContent     = 'Error al cargar datos: ' + e.message;
+  } finally {
+    btn.disabled = false;
+    btn.textContent = 'Aplicar';
+  }
+}
+
+// ─── Init ─────────────────────────────────────────────────────────────────────
+function initDashboard() {
+  const startInput = document.getElementById('date-start');
+  const endInput   = document.getElementById('date-end');
+  const applyBtn   = document.getElementById('apply-btn');
+
+  const start = monthStart();
+  const end   = todayStr();
+  startInput.value = start;
+  endInput.value   = end;
+  endInput.max     = end;
+
+  applyBtn.addEventListener('click', () => {
+    const s = startInput.value, e = endInput.value;
+    if (!s || !e) return;
+    fetchReport(s, e);
+  });
+
+  fetchReport(start, end);
+}
 </script>
 </body>
 </html>
