@@ -268,6 +268,12 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;f
         <input type="date" id="date-start" class="date-input" />
         <span class="date-sep">—</span>
         <input type="date" id="date-end" class="date-input" />
+        <div class="date-divider"></div>
+        <span class="date-sep" style="font-size:10px;font-weight:500;color:var(--muted)">vs</span>
+        <button id="compare-auto-btn" class="preset-btn active" title="Período anterior automático">Auto</button>
+        <input type="date" id="cdate-start" class="date-input" style="display:none" />
+        <span class="date-sep" id="cdate-sep" style="display:none">—</span>
+        <input type="date" id="cdate-end" class="date-input" style="display:none" />
         <button id="apply-btn" class="apply-btn">Aplicar</button>
       </div>
     </header>
@@ -553,6 +559,22 @@ document.querySelectorAll('.metric-tab').forEach(t=>{
   });
 });
 
+// ─── Comparison toggle ────────────────────────────────────────────────────────
+const compareAutoBtn=document.getElementById('compare-auto-btn');
+const cdateStart=document.getElementById('cdate-start');
+const cdateEnd=document.getElementById('cdate-end');
+const cdateSep=document.getElementById('cdate-sep');
+let compareAuto=true;
+compareAutoBtn.addEventListener('click',()=>{
+  compareAuto=!compareAuto;
+  compareAutoBtn.classList.toggle('active',compareAuto);
+  compareAutoBtn.textContent=compareAuto?'Auto':'Personalizado';
+  cdateStart.style.display=compareAuto?'none':'';
+  cdateSep.style.display=compareAuto?'none':'';
+  cdateEnd.style.display=compareAuto?'none':'';
+  if(compareAuto){cdateStart.value='';cdateEnd.value='';}
+});
+
 // ─── Fetch ────────────────────────────────────────────────────────────────────
 async function fetchReport(start,end){
   const btn=document.getElementById('apply-btn');
@@ -560,7 +582,12 @@ async function fetchReport(start,end){
   btn.disabled=true;btn.textContent='Cargando…';
   err.style.display='none';
   try{
-    const r=await fetch(`/api/report?start=${start}&end=${end}`);
+    const qs=new URLSearchParams({start,end});
+    if(!compareAuto&&cdateStart.value&&cdateEnd.value){
+      qs.set('cstart',cdateStart.value);
+      qs.set('cend',cdateEnd.value);
+    }
+    const r=await fetch(`/api/report?${qs}`);
     const d=await r.json();
     if(d.error)throw new Error(d.error);
     window._lastData=d;

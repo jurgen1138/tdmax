@@ -19,11 +19,15 @@ export default {
 };
 
 async function handleReport(url, env) {
-  const start = url.searchParams.get('start') || monthStart();
-  const end   = url.searchParams.get('end')   || todayStr();
+  const start  = url.searchParams.get('start')  || monthStart();
+  const end    = url.searchParams.get('end')    || todayStr();
+  const cstart = url.searchParams.get('cstart');
+  const cend   = url.searchParams.get('cend');
   try {
     const token = await getAccessToken(env);
-    const prev  = getPreviousPeriod(start, end);
+    const prev  = (cstart && cend)
+      ? { startDate: cstart, endDate: cend }
+      : getPreviousPeriod(start, end);
     const data  = await fetchAll(token, env.GA4_PROPERTY_ID, start, end, prev);
     return Response.json(data, { headers: { 'Cache-Control': 'no-store' } });
   } catch (e) {
