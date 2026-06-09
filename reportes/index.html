@@ -387,7 +387,7 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;f
   }
   function unlock(){
     document.getElementById('auth-overlay').style.display='none';
-    document.getElementById('app').style.display='';
+    document.getElementById('app').style.display='block';
   }
   if(sessionStorage.getItem(KEY)==='1'){unlock();return;}
   const inp=document.getElementById('auth-input');

@@ -1,0 +1,5 @@
+node_modules/
+.git/
+reportes/node_modules/
+reportes/generate.mjs
+reportes/auth.mjs
