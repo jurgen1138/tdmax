@@ -238,7 +238,14 @@ async function fetchAll(token, pid, start, end, prev) {
     gtmEvents:(gtmC.rows||[]).map(r=>{
       const event=r.dimensionValues[0].value;
       const count=parseInt(r.metricValues[0].value||'0');
-      return{event,count,vs:pct(count,gtmPrevMap[event]||0)};
+      const prevCount=gtmPrevMap[event]||0;
+      const pctUsers=acC>0?+((count/acC)*100).toFixed(2):0;
+      const pctUsersPrev=acP>0?+((prevCount/acP)*100).toFixed(2):0;
+      return{
+        event,count,vs:pct(count,prevCount),
+        pctUsers,
+        pctUsersVs:acP>0?+(pctUsers-pctUsersPrev).toFixed(2):null,
+      };
     }),
     activity:{mau,wau,dau,stickiness:mau>0?((dau/mau)*100).toFixed(1):'0.0'},
   };

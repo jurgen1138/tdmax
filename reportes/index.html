@@ -154,6 +154,13 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;f
 .compare-pill{display:inline-flex;align-items:center;gap:4px;font-size:11px;color:var(--muted);background:var(--surface2);border-radius:5px;padding:2px 8px}
 .compare-pill .dot{width:6px;height:6px;border-radius:2px}
 
+/* ── Info tooltip ── */
+.info-icon{display:inline-flex;align-items:center;justify-content:center;width:14px;height:14px;border-radius:50%;background:var(--surface2);color:var(--muted);font-size:10px;font-weight:600;line-height:1;cursor:help;margin-left:5px;flex-shrink:0;position:relative;vertical-align:middle;user-select:none;transition:background .15s,color .15s}
+.info-icon:hover,.info-icon:focus,.info-icon.open{background:var(--accent);color:#fff;outline:none}
+.info-tooltip{display:none;position:absolute;z-index:300;bottom:calc(100% + 7px);left:50%;transform:translateX(-50%);width:max-content;max-width:min(220px,70vw);background:var(--text);color:var(--bg);font-size:11px;font-weight:400;line-height:1.45;padding:8px 10px;border-radius:7px;text-align:left;white-space:normal;box-shadow:0 6px 20px rgba(0,0,0,.18);pointer-events:none}
+.info-tooltip::after{content:'';position:absolute;top:100%;left:50%;transform:translateX(-50%);border:5px solid transparent;border-top-color:var(--text)}
+.info-icon:hover .info-tooltip,.info-icon:focus .info-tooltip,.info-icon.open .info-tooltip{display:block}
+
 /* ── Skeleton ── */
 .sk{background:linear-gradient(90deg,var(--surface2) 25%,var(--surface3) 50%,var(--surface2) 75%);background-size:200% 100%;animation:shimmer 1.4s infinite;border-radius:var(--r)}
 @keyframes shimmer{from{background-position:200% 0}to{background-position:-200% 0}}
@@ -287,7 +294,7 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;f
         <div class="sec-title" style="margin-top:1.5rem">Tendencia diaria</div>
         <div class="chart-card">
           <div class="chart-card-header">
-            <span class="chart-card-title">Usuarios activos</span>
+            <span class="chart-card-title">Usuarios activos<span class="info-icon" tabindex="0" role="button" aria-label="Más información">?<span class="info-tooltip">Evolución diaria de usuarios, sesiones o páginas (según la pestaña elegida). La línea sólida es el período actual y la punteada el período de comparación.</span></span></span>
             <div style="display:flex;align-items:center;gap:10px">
               <div class="compare-pill" id="trend-compare-pill">
                 <span class="dot" style="background:var(--muted)"></span>
@@ -307,17 +314,19 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;f
         </div>
         <div class="two-col">
           <div class="chart-card" style="margin-bottom:0">
-            <div class="chart-card-header"><span class="chart-card-title">Dispositivos</span></div>
+            <div class="chart-card-header"><span class="chart-card-title">Dispositivos<span class="info-icon" tabindex="0" role="button" aria-label="Más información">?<span class="info-tooltip">Distribución de usuarios activos según el tipo de dispositivo: móvil, escritorio o tablet.</span></span></span></div>
             <div style="display:flex;align-items:center;justify-content:center;height:160px">
               <canvas id="deviceChart" style="max-height:160px;max-width:160px"></canvas>
             </div>
             <div class="legend-row" id="device-legend" style="justify-content:center;margin-bottom:0;margin-top:10px"></div>
           </div>
           <div class="chart-card" style="margin-bottom:0">
-            <div class="chart-card-header"><span class="chart-card-title">Top países</span></div>
+            <div class="chart-card-header"><span class="chart-card-title">Top países<span class="info-icon" tabindex="0" role="button" aria-label="Más información">?<span class="info-tooltip">Usuarios activos agrupados por país, según la ubicación detectada por GA4.</span></span></span></div>
             <div id="geo-mini"></div>
           </div>
         </div>
+        <div class="sec-title">Conversión vs. usuarios</div>
+        <div class="chart-card" id="conversion-rate-card"></div>
       </section>
 
       <!-- ── Audiencia ── -->
@@ -333,7 +342,7 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;f
           </div>
           <div class="chart-card" style="margin-bottom:0">
             <div class="chart-card-header">
-              <span class="chart-card-title">Dispositivos</span>
+              <span class="chart-card-title">Dispositivos<span class="info-icon" tabindex="0" role="button" aria-label="Más información">?<span class="info-tooltip">Distribución de usuarios activos según el tipo de dispositivo: móvil, escritorio o tablet.</span></span></span>
             </div>
             <div style="display:flex;align-items:center;justify-content:center;height:130px">
               <canvas id="deviceChart2" style="max-height:130px;max-width:130px"></canvas>
@@ -341,7 +350,7 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;f
             <div class="legend-row" id="device-legend2" style="justify-content:center;margin-bottom:0;margin-top:8px"></div>
           </div>
         </div>
-        <div class="sec-title">Usuarios por país</div>
+        <div class="sec-title">Usuarios por país<span class="info-icon" tabindex="0" role="button" aria-label="Más información">?<span class="info-tooltip">Usuarios activos agrupados por país, según la ubicación detectada por GA4.</span></span></div>
         <div class="chart-card">
           <div id="geo-full"></div>
           <div id="geo-footnote" style="font-size:11px;color:var(--muted);margin-top:8px"></div>
@@ -350,7 +359,7 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;f
 
       <!-- ── Adquisición ── -->
       <section id="section-adquisicion" class="section">
-        <div class="sec-title">Canales de adquisición</div>
+        <div class="sec-title">Canales de adquisición<span class="info-icon" tabindex="0" role="button" aria-label="Más información">?<span class="info-tooltip">Sesiones agrupadas por canal de origen del tráfico (búsqueda orgánica, directo, redes sociales, referidos, etc.), según el agrupamiento predeterminado de GA4.</span></span></div>
         <div class="chart-card">
           <div class="legend-row" id="ch-legend"></div>
           <div class="chart-wrap" id="channel-wrap">
@@ -361,7 +370,7 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;f
 
       <!-- ── Contenido ── -->
       <section id="section-contenido" class="section">
-        <div class="sec-title">Páginas más vistas</div>
+        <div class="sec-title">Páginas más vistas<span class="info-icon" tabindex="0" role="button" aria-label="Más información">?<span class="info-tooltip">Páginas con más vistas (screenPageViews) durante el período, ordenadas de mayor a menor.</span></span></div>
         <div class="chart-card">
           <table class="data-table">
             <thead><tr><th>Página</th><th class="num">Vistas</th></tr></thead>
@@ -471,6 +480,19 @@ const EVENT_LABELS={
   'clic_boton_descargacalendarioFWC26':'Descarga Calendario FWC26',
   'clic_lanzador_teletica':'Lanzador Teletica.com',
 };
+
+// ─── Info tooltips ────────────────────────────────────────────────────────────
+function infoIcon(text){
+  return`<span class="info-icon" tabindex="0" role="button" aria-label="Más información">?<span class="info-tooltip">${text}</span></span>`;
+}
+// Tap-to-toggle for touch devices (hover/focus already cover desktop)
+document.addEventListener('click',e=>{
+  const icon=e.target.closest('.info-icon');
+  document.querySelectorAll('.info-icon.open').forEach(el=>{
+    if(el!==icon)el.classList.remove('open');
+  });
+  if(icon)icon.classList.toggle('open');
+});
 
 // ─── Theme ────────────────────────────────────────────────────────────────────
 function getTheme(){return document.documentElement.getAttribute('data-theme')||'light';}
@@ -613,6 +635,7 @@ function renderAll(d){
   renderChannels(d.channels);
   renderPages(d.topPages);
   renderGtm(d.gtmEvents);
+  renderConversionRate(d.gtmEvents);
   document.getElementById('dash-footer').textContent=
     `Actualizado ${fmtDateFull(new Date().toISOString().split('T')[0])} · Google Analytics 4`;
 }
@@ -627,16 +650,21 @@ function vsHtml(v,invertColor){
 }
 function renderKpis(ov,period){
   const items=[
-    {label:'Usuarios activos',val:fmtK(ov.activeUsers),vs:ov.vs.activeUsers,sub:'período completo'},
-    {label:'Nuevos usuarios',val:fmtK(ov.newUsers),vs:ov.vs.newUsers,sub:'primer acceso'},
-    {label:'Sesiones',val:fmtK(ov.sessions),vs:ov.vs.sessions,sub:'session_start'},
-    {label:'Páginas vistas',val:fmtK(ov.pageViews),vs:ov.vs.pageViews,sub:'total views'},
-    {label:'Engagement rate',val:ov.engagementRate+'%',vs:ov.vs.engagementRate,sub:'sesiones engaged'},
+    {label:'Usuarios activos',val:fmtK(ov.activeUsers),vs:ov.vs.activeUsers,sub:'período completo',
+      tip:'Usuarios únicos que visitaron el sitio durante el período seleccionado (activeUsers de GA4).'},
+    {label:'Nuevos usuarios',val:fmtK(ov.newUsers),vs:ov.vs.newUsers,sub:'primer acceso',
+      tip:'Usuarios que ingresaron al sitio por primera vez durante este período.'},
+    {label:'Sesiones',val:fmtK(ov.sessions),vs:ov.vs.sessions,sub:'session_start',
+      tip:'Total de sesiones iniciadas (evento session_start) durante el período.'},
+    {label:'Páginas vistas',val:fmtK(ov.pageViews),vs:ov.vs.pageViews,sub:'total views',
+      tip:'Total de páginas vistas (screenPageViews) durante el período.'},
+    {label:'Engagement rate',val:ov.engagementRate+'%',vs:ov.vs.engagementRate,sub:'sesiones engaged',
+      tip:'Porcentaje de sesiones "engaged": duraron 10+ segundos, tuvieron 2+ páginas vistas o generaron una conversión.'},
   ];
   const prevLabel=`${fmtDate(period.previous.start)} – ${fmtDate(period.previous.end)}`;
   document.getElementById('kpi-grid').innerHTML=items.map(k=>`
     <div class="kpi-card">
-      <div class="kpi-label">${k.label}</div>
+      <div class="kpi-label">${k.label}${infoIcon(k.tip)}</div>
       <div class="kpi-value">${k.val}</div>
       <div class="kpi-vs">${vsHtml(k.vs)}<span class="kpi-vs-label">vs ${prevLabel}</span></div>
     </div>`).join('');
@@ -783,17 +811,25 @@ function renderGeo(countries,containerId,limit){
 // ─── Activity ─────────────────────────────────────────────────────────────────
 function renderActivity(act,ov){
   document.getElementById('act-grid').innerHTML=[
-    {label:'Usuarios activos 30 días',value:fmtK(act.mau)},
-    {label:'Usuarios activos 7 días',value:fmtK(act.wau)},
-    {label:'Usuarios activos 1 día',value:fmtK(act.dau)},
-    {label:'Stickiness DAU/MAU',value:act.stickiness+'%'},
-  ].map(i=>`<div class="act-item"><div class="act-label">${i.label}</div><div class="act-value">${i.value}</div></div>`).join('');
+    {label:'Usuarios activos 30 días',value:fmtK(act.mau),
+      tip:'Usuarios únicos activos en los últimos 30 días, siempre relativo a hoy (no depende del rango de fechas elegido).'},
+    {label:'Usuarios activos 7 días',value:fmtK(act.wau),
+      tip:'Usuarios únicos activos en los últimos 7 días, siempre relativo a hoy.'},
+    {label:'Usuarios activos 1 día',value:fmtK(act.dau),
+      tip:'Usuarios únicos activos en el último día, siempre relativo a hoy.'},
+    {label:'Stickiness DAU/MAU',value:act.stickiness+'%',
+      tip:'Relación entre usuarios diarios y mensuales (DAU ÷ MAU). Un valor más alto indica usuarios más recurrentes.'},
+  ].map(i=>`<div class="act-item"><div class="act-label">${i.label}${infoIcon(i.tip)}</div><div class="act-value">${i.value}</div></div>`).join('');
   document.getElementById('engagement-grid').innerHTML=[
-    {label:'Engagement rate',value:ov.engagementRate+'%'},
-    {label:'Págs por sesión',value:ov.pagesPerSession},
-    {label:'Duración promedio',value:ov.avgDuration},
-    {label:'Sesiones engaged/usuario',value:ov.engagedPerUser},
-  ].map(i=>`<div class="act-item"><div class="act-label">${i.label}</div><div class="act-value">${i.value}</div></div>`).join('');
+    {label:'Engagement rate',value:ov.engagementRate+'%',
+      tip:'Porcentaje de sesiones "engaged": duraron 10+ segundos, tuvieron 2+ páginas vistas o generaron una conversión.'},
+    {label:'Págs por sesión',value:ov.pagesPerSession,
+      tip:'Promedio de páginas vistas por sesión (páginas vistas ÷ sesiones).'},
+    {label:'Duración promedio',value:ov.avgDuration,
+      tip:'Tiempo promedio de interacción por usuario activo (duración total ÷ usuarios activos).'},
+    {label:'Sesiones engaged/usuario',value:ov.engagedPerUser,
+      tip:'Promedio de sesiones "engaged" por usuario activo.'},
+  ].map(i=>`<div class="act-item"><div class="act-label">${i.label}${infoIcon(i.tip)}</div><div class="act-value">${i.value}</div></div>`).join('');
 }
 
 // ─── Channels ─────────────────────────────────────────────────────────────────
@@ -856,7 +892,7 @@ function renderGtm(events){
   const max=events[0]?.count||1;
   card.innerHTML=`
     <div class="chart-card-header" style="margin-bottom:14px">
-      <span class="chart-card-title">Clics por botón</span>
+      <span class="chart-card-title">Clics por botón${infoIcon('Conteo de clics registrados por Google Tag Manager para cada botón/CTA configurado. El badge muestra el cambio porcentual respecto al período de comparación.')}</span>
       <span class="chart-card-sub">${total.toLocaleString('es')} eventos totales</span>
     </div>
     ${events.map(e=>{
@@ -868,6 +904,34 @@ function renderGtm(events){
         <span class="event-name" title="${label}">${label}</span>
         <div class="event-bar-bg"><div class="event-bar" style="width:${pct}%"></div></div>
         <span class="event-count">${e.count.toLocaleString('es')}</span>
+        <span class="event-vs">${vsHtml_}</span>
+      </div>`;
+    }).join('')}`;
+}
+
+// ─── Conversion rate (clics / usuarios activos) ──────────────────────────────
+function renderConversionRate(events){
+  const card=document.getElementById('conversion-rate-card');
+  if(!card)return;
+  if(!events||!events.length){
+    card.innerHTML='<p style="font-size:12px;color:var(--muted)">Sin datos para este período.</p>';return;
+  }
+  const max=Math.max(...events.map(e=>e.pctUsers||0),0.01);
+  card.innerHTML=`
+    <div class="chart-card-header" style="margin-bottom:14px">
+      <span class="chart-card-title">% de usuarios que hacen clic${infoIcon('Para cada botón: clics ÷ usuarios activos del período × 100. El badge muestra el cambio en puntos porcentuales (pp) frente al período de comparación.')}</span>
+      <span class="chart-card-sub">Clics ÷ usuarios activos del período</span>
+    </div>
+    ${events.map(e=>{
+      const pct=((e.pctUsers/max)*100).toFixed(1);
+      const label=EVENT_LABELS[e.event]||e.event;
+      const v=e.pctUsersVs;
+      const vsHtml_=v===null||v===undefined?'<span style="color:var(--faint)">—</span>':
+        v>=0?`<span class="badge-up">↑ ${Math.abs(v)}pp</span>`:`<span class="badge-down">↓ ${Math.abs(v)}pp</span>`;
+      return`<div class="event-row">
+        <span class="event-name" title="${label}">${label}</span>
+        <div class="event-bar-bg"><div class="event-bar" style="width:${pct}%"></div></div>
+        <span class="event-count">${e.pctUsers.toFixed(2)}%</span>
         <span class="event-vs">${vsHtml_}</span>
       </div>`;
     }).join('')}`;
