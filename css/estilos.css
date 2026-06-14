@@ -1152,6 +1152,90 @@ background: linear-gradient(149deg, rgba(21, 29, 39, 1) 0%, rgba(0, 1, 3, 1) 100
 }
 /* ── END SECCION FAQ── */
 
+/* ── SECCION SOPORTE ── */
+.soporte-section {
+  position: relative;
+  background: linear-gradient(135deg, #1a0a3e 0%, #3a0f5e 45%, #5c1763 75%, #3a0d52 100%);
+  padding: 70px 0 80px;
+  overflow: hidden;
+}
+
+.soporte-section::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: repeating-linear-gradient(45deg, rgba(255,255,255,.04) 0 2px, transparent 2px 40px);
+  pointer-events: none;
+}
+
+.soporte-inner {
+  position: relative;
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 0 40px;
+  text-align: center;
+}
+
+.soporte-title {
+  font-family: 'sanfra', sans-serif;
+  font-size: clamp(1.6rem, 3vw, 2.2rem);
+  color: #fff;
+  text-align: center;
+  letter-spacing: 1px;
+  margin-bottom: 32px;
+}
+
+.soporte-grid {
+  display: flex;
+  flex-direction: column;
+}
+
+.soporte-item {
+  padding: 28px 0;
+  border-top: 1px solid rgba(255,255,255,.12);
+}
+
+.soporte-label {
+  font-family: 'sanfra', sans-serif;
+  font-size: 16px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #afea00;
+  margin-bottom: 10px;
+}
+
+.soporte-value {
+  font-family: 'sanfra regular', sans-serif;
+  font-size: 20px;
+  color: #fff;
+}
+
+.soporte-value a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.soporte-value a:hover {
+  text-decoration: underline;
+}
+
+.soporte-value-lg {
+  font-family: 'sanfra', sans-serif;
+  font-size: clamp(2.2rem, 6vw, 3.4rem);
+  letter-spacing: 1px;
+}
+
+.soporte-schedule {
+  font-family: 'sanfra', sans-serif;
+  font-size: 16px;
+  color: #fff;
+  line-height: 1.7;
+  margin-top: 36px;
+  padding-top: 28px;
+  border-top: 1px solid rgba(255,255,255,.12);
+}
+/* ── END SECCION SOPORTE ── */
+
 /* ── FOOTER SECCION── */
 .td-footer {
   background: #050507;
@@ -1457,6 +1541,15 @@ background: linear-gradient(149deg, rgba(21, 29, 39, 1) 0%, rgba(0, 1, 3, 1) 100
   }
   .faq-title {
     font-size: 50px;
+  }
+  .soporte-inner {
+    padding: 0 24px;
+  }
+  .soporte-title {
+    font-size: 28px;
+  }
+  .soporte-value-lg {
+    font-size: 38px;
   }
 }
 /* Desktop: hide mobile carousel elements */
