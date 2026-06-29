@@ -72,6 +72,18 @@ p.intro {
 
 .tableFifaWC-26 td img { padding-top: 5px; }
 
+.banderita {
+  width: 20px;
+  height: auto;
+  vertical-align: middle;
+  padding-top: 0 !important;
+  margin: 0 2px;
+}
+
+.partido {
+  white-space: nowrap;
+}
+
 .verditoo { color: #BFFF27; }
 
 .tableFifaWC-26 td.titles {
@@ -146,6 +158,7 @@ footer img {
   .tableFifaWC-26 td        { font-size: 9px; }
   .tableFifaWC-26 td.titles { font-size: 10px; }
   .tableFifaWC-26 td img    { width: 30px; padding-left: 4px; }
+  .banderita                { width: 14px !important; padding-left: 0 !important; }
   .tableFifaWC-26 td.hora   { padding-right: 15px; }
   footer img                { width: 250px; }
 }
