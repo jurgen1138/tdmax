@@ -43,6 +43,10 @@ pokkt.com,7606,RESELLER,c45702d9311e25fd
 freewheel.tv,1152449,RESELLER
 video.unrulymedia.com,3341072718,RESELLER
 
+# Nexxen - Streann
+
+video.unrulymedia.com, 190460495, RESELLER, 98c21ef9a666c68b
+
 # Beachfront - Streann
 
 beachfront.com, 14473, DIRECT, e2541279e8e2ca4d
