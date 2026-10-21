@@ -653,9 +653,8 @@ body {
 /* ── CUARTA SECCION ── */
 .contenido-section {
   position: relative;
-  background: url("../images/desktop/back-contenidoexclusivo.jpg");
+  background: url("../images/desktop/bg-contexclusivo-octubre2026.webp");
   background-size: cover;
-  background-position: 1980px 0px;
   align-items: center;
   padding-top: 60px;
 }
@@ -1498,7 +1497,7 @@ background: linear-gradient(149deg, rgba(21, 29, 39, 1) 0%, rgba(0, 1, 3, 1) 100
   .contenido-section {
     padding-bottom: 0px;
     padding-top: 0px;
-    background-position: 1410px 0px;
+    background-position: 1920px 0px;
   }
   .contenido-section::before {
     background: #000;
